@@ -1,0 +1,261 @@
+@import url(../navbar.css);
+@import url(../footer.css);
+
+*{
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+div.banner{
+  margin: 0 auto;
+  background-image: url("./images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 320px;
+}
+
+main{
+background-color: hsla(193deg, 100%, 96%, 100);
+padding-top: 100px;
+width: 1200px;
+margin: 0 auto;
+}
+
+section.info{
+  margin: 0 auto;
+  width: 770px;
+  margin-bottom: 60px;
+}
+
+section.info > img.info{
+  margin-bottom: 50px;
+  
+}
+
+section.info > p.title{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.info > p.content{
+  margin: 0 auto;
+  width: 660px;
+  font-size: 18px;
+}
+/* ---------------------------------羊肉魯飯 */
+div.background{
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+}
+article.food_1{
+  margin: 0 140px 0 150px;
+  display: flex;
+  padding: 100px 0 80px;
+}
+article > div.food{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.img > img{
+  vertical-align: top;
+}
+
+article.food_1 div.text{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+article.food_1 p.title{
+  position: relative;
+  width: fit-content;
+  font-size: 24px;
+  /* background-color: hsla(47deg, 78%, 74%, .91);
+  width: fit-content;
+  height: 20px; */
+}
+span.background{
+  position: relative;
+  z-index: 1;
+}
+article.food_1 p.title::after{
+  top: 15px;
+  position: absolute;
+  width: 100%;
+  transform: translateX(-100%);
+  content:"";
+  background-color:hsla(47deg, 78%, 74%, .91);
+  height: 15px;
+  z-index: 0;
+}
+/* ===========介紹１=========== */
+article.food_1_1{
+  /* margin-left: 200px; */
+  /* margin-right: 140px; */
+  display: flex;
+  padding: 0 0 40px 190px;
+}
+article.food_1_1 div.text{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 8px 0 120px;
+}
+
+article.food_1_1 p.title{
+  border-radius: 50% / 50%;
+  background-color:  hsla(47deg, 78%, 74%, .91);
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  width: 120px;
+}
+
+article.food_1_1 p.info{
+  width: 445px;
+  margin-top: 25px;
+}
+
+/* ===========介紹2=========== */
+article.food_1_2{
+  margin-left: 308px;
+  margin-right: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+  
+}
+article.food_1_2 div.text{
+ 
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+article.food_1_2 p.title{
+  font-size: 20px;
+  /* padding-top: 30px; */
+  border-radius: 50% / 50%;
+  background-color:  hsla(47deg, 78%, 74%, .91);
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  width: 120px;
+  
+}
+
+article.food_1_2 p.info{
+  width: 445px;
+  margin-top: 25px;
+}
+
+/* 鼎邊銼 ----------------------------------*/
+
+article.food_2{
+  margin-left: 150px;
+  margin-right: 140px;
+  display: flex;
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+
+article.food_2 div.text{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+article.food_2 p.title{
+  position: relative;
+  font-size: 24px;
+}
+
+article.food_2 p.title::after{
+  top: 15px;
+  position: absolute;
+  width: 120px;
+  transform: translateX(-100%);
+  content:"";
+  background-color:hsla(47deg, 78%, 74%, .91);
+  height: 15px;
+  z-index: 0;
+}
+/* 天婦羅----------------------------------- */
+div.background_2{
+  /* transform: translateY(-50px); */
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+}
+
+article.food_3{
+  margin-left: 150px;
+  margin-right: 140px;
+  display: flex;
+  padding-bottom: 80px;
+  padding-top: 100px;
+}
+article.food_3 div.text{
+  
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+article.food_3 p.title{
+  width: fit-content;
+  font-size: 24px;
+  position: relative;
+}
+article.food_3 p.title::after{
+  top: 15px;
+  position: absolute;
+  width: 120px;
+  transform: translateX(-100%);
+  content:"";
+  background-color:hsla(47deg, 78%, 74%, .91);
+  height: 15px;
+  z-index: 0;
+}
+article.food_1_2_1{
+  margin-left: 308px;
+  margin-right: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 240px 
+}
+article.food_1_2_1 div.text{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+article.food_1_2_1 p.title{
+  font-size: 20px;
+  border-radius: 50% / 50%;
+  background-color:  hsla(47deg, 78%, 74%, .91);
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  width: 120px;
+}
+
+article.food_1_2_1 p.info{
+  width: 445px;
+  margin-top: 25px;
+}

@@ -1,0 +1,150 @@
+@import url(../navbar.css);
+@import url(../footer.css);
+
+*{
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+div.banner{
+  margin: 0 auto;
+  background-image: url("./images/banner_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 320px;
+}
+
+main{
+border: 1px solid hsla(193deg, 100%, 96%, 100);;
+background-color: hsla(193deg, 100%, 96%, 100);
+padding-top: 100px;
+width: 1200px;
+margin: 0 auto;
+}
+p.sol{
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 24px;
+  color: hsla(0deg, 2%, 33%, 100);
+}
+main{
+  font-size: 0;
+}
+article.images{
+  margin-left: 120px;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 15px;
+  width: 600px;
+  display: inline-block;
+}
+div.grid{
+  display: grid;
+  font-size: 0px;
+  grid-template-columns: auto auto ;
+  padding: 20px 15px 20px ;
+}
+article.images  div.grid_item{
+  width: fit-content;
+  height: fit-content;
+  font-size: 0;
+  padding: 20px;
+  
+}
+/* ---------------------------右側選擇區----------------------- */
+article.goto{
+  vertical-align: top;
+  width: 245px;
+  display: inline-block;
+  margin-left: 117px;
+  font-size: 24px;
+}
+
+article.goto img.vector{
+  width: 176px;
+  transform: translateY(-50px) translateX(-80px);
+}
+
+article.goto  p{
+  border-radius: 5px;
+  width: 245px;
+  height: 200px;
+  padding-top: 85px;
+  text-align: center;
+  background-color: lightgray;
+  margin-bottom: 60px;
+  position: relative;
+}
+article.goto  p::after{
+  cursor: pointer;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  background-image: url("./icon/reset.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  width: 70px;
+  content:"重選";
+  position: absolute;
+  font-size: 18px;
+  bottom: -30px;
+  right: 0;
+  padding-right: 10px;
+  text-align: right;
+}
+article.goto img.plus{
+  /* border: 1px solid blue; */
+  margin: 0 0 60px 70px;
+}
+
+/* ------------------------------建議路程時間------------------ */
+article.next{
+  border-top: 1px solid hsla(160deg, 52%, 40%, .19);
+  border-bottom: 1px solid hsla(160deg, 52%, 40%, .19);
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 960px;
+  height: 580px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+article.next > div.background{
+  background-color: hsla(0deg, 0%, 100%, .75);
+  height: 540px;
+  margin-top: 19px;
+  
+}
+
+article.next p.time{
+  font-size: 30px;
+  padding: 25px 0 25px 170px;
+}
+
+article.next div.map{
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.suggest{
+  display: inline-block;
+  font-size: 18px;
+  padding: 155px 88px 0 88px;
+}
+div.suggest > p.title{
+  font-size: 30px;
+}
+
+div.suggest > button{
+  background-color: hsla(47deg, 78%, 74%, 100);
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  border-width: 1px; 
+  font-size: 24px;
+  width: 180px;
+  height: 55px;
+  margin-top: 115px;
+  margin-left: 30px;
+  cursor: pointer;
+}

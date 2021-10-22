@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration:none;
+  color: hsla(0deg, 2%, 33%, 100);
+  font-family: 'Noto Sans';
+  background-color: hsla(193deg, 100%, 96%, 100);
+}
+
+nav.navbar{
+  border: 1px solid black;
+  width: 1200px;
+  height: 103px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav.navbar > a img.logo{
+  border-radius: 50%;
+  width: 150px;
+  position: absolute;
+  left: 60px;
+  top: 20px;
+}
+
+nav.navbar > a img.logo2{
+  margin-top: 13.5px;
+  margin-left: 397px;
+}
+
+nav.navbar > div.img{
+  position: absolute;
+  right: 60px;
+  top: 35px;
+}
+
+nav.navbar > p{
+  font-size: 14px;
+  position: absolute;
+  left: 860px;
+  top: 40px;
+}
+
+div.banner{
+  margin: 0 auto;
+  background-image: url("./images/banner2.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 320px;
+}
+

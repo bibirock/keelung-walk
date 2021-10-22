@@ -1,0 +1,317 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Noto Sans';
+}
+
+nav.navbar > p{
+  font-size: 14px;
+  position: absolute;
+  left: 910px !important;
+  top: 35px;
+}
+
+div.banner{
+  margin: 0 auto;
+  background-image: url("./image/banner-1.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 320px;
+}
+p.sol{
+  width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 24px;
+  color: hsla(0deg, 2%, 33%, 100);
+}
+main.main{
+  border: 1px solid hsla(193deg, 100%, 96%, 100);
+  background-color: hsla(193deg, 100%, 96%, 100);
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 和平束口袋 */
+
+div.product_1{
+  background-color: hsla(160deg, 52%, 40%, .19);
+  width: 1200px;
+  height: 370px;
+  position: relative;
+  margin-bottom: 350px;
+}
+
+div.product_1 > img.product_1_1{
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+
+div.product_1 > p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 700px;
+  top: 90px;
+}
+
+div.product_1 > p.price{
+  font-size: 18px;
+  font-style: bold;
+  position: absolute;
+  left: 702px;
+  top: 140px;
+}
+
+div.product_1 > p.content{
+  font-size: 18px;
+  position: absolute;
+  left: 702px;
+  top: 180px;
+  width: 420px;
+}
+
+div.product_1 > button{
+  background-color: hsla(47deg, 78%, 74%, 100); 
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  border-width: 1px; 
+  width: 160px;
+  height: 50px; 
+  font-size: 24px;
+  position: absolute;
+  left: 825px;
+  top: 420px;
+  cursor: pointer;
+} 
+
+/* 和平餐具袋 */
+
+div.product_2{
+  background-color: hsla(160deg, 52%, 40%, .19);
+  width: 1200px;
+  height: 370px;
+  display: block;
+  position: relative;
+  margin-bottom: 350px;
+}
+
+div.product_2 > img.product_2_1{
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+
+div.product_2 > p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 700px;
+  top: 90px;
+}
+
+div.product_2 > p.price{
+  font-size: 18px;
+  font-style: bold;
+  position: absolute;
+  left: 702px;
+  top: 140px;
+}
+
+div.product_2 > p.content{
+  font-size: 18px;
+  position: absolute;
+  left: 702px;
+  top: 180px;
+  width: 420px;
+}
+
+div.product_2 > button{
+  background-color: hsla(47deg, 78%, 74%, 100); 
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  border-width: 1px; 
+  width: 160px;
+  height: 50px; 
+  font-size: 24px;
+  position: absolute;
+  left: 825px;
+  top: 420px;
+  cursor: pointer;
+} 
+
+/* 和平純棉柔感毛巾 */
+
+div.product_3{
+  background-color: hsla(160deg, 52%, 40%, .19);
+  width: 1200px;
+  height: 370px;
+  position: relative;
+  margin-bottom: 350px;
+  /* position: absolute;
+  top: 1660px; */
+}
+
+div.product_3 > img.product_3_1{
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+
+div.product_3 > p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 700px;
+  top: 90px;
+}
+
+div.product_3 > p.price{
+  font-size: 18px;
+  font-style: bold;
+  position: absolute;
+  left: 702px;
+  top: 140px;
+}
+
+div.product_3 > p.content{
+  font-size: 18px;
+  position: absolute;
+  left: 702px;
+  top: 180px;
+  width: 420px;
+}
+
+div.product_3 > button{
+  background-color: hsla(47deg, 78%, 74%, 100); 
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  border-width: 1px; 
+  width: 160px;
+  height: 50px; 
+  font-size: 24px;
+  position: absolute;
+  left: 825px;
+  top: 420px;
+  cursor: pointer;
+} 
+
+/* 和平刺繡三用包 */
+
+div.product_4{
+  background-color: hsla(160deg, 52%, 40%, .19);
+  width: 1200px;
+  height: 370px;
+  position: relative;
+  margin-bottom: 350px;
+}
+
+div.product_4 > img.product_4_1{
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  position: relative;
+  top: 70px;
+  left: 60px;
+  margin-bottom: 350px;
+}
+
+div.product_4 > p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 700px;
+  top: 90px;
+}
+
+div.product_4 > p.price{
+  font-size: 18px;
+  font-style: bold;
+  position: absolute;
+  left: 702px;
+  top: 140px;
+}
+
+div.product_4 > p.content{
+  font-size: 18px;
+  position: absolute;
+  left: 702px;
+  top: 180px;
+  width: 420px;
+}
+
+div.product_4 > button{
+  background-color: hsla(47deg, 78%, 74%, 100); 
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  border-width: 1px; 
+  width: 160px;
+  height: 50px; 
+  font-size: 24px;
+  position: absolute;
+  left: 825px;
+  top: 420px;
+  cursor: pointer;
+} 
+
+/* 和平小提袋 */
+
+div.product_5{
+  background-color: hsla(160deg, 52%, 40%, .19);
+  width: 1200px;
+  height: 370px;
+  position: relative;
+  margin-bottom: 350px;
+}
+
+div.product_5 > img.product_5_1{
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+
+div.product_5 > p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 700px;
+  top: 90px;
+}
+
+div.product_5 > p.price{
+  font-size: 18px;
+  font-style: bold;
+  position: absolute;
+  left: 702px;
+  top: 140px;
+}
+
+div.product_5 > p.content{
+  font-size: 18px;
+  position: absolute;
+  left: 702px;
+  top: 180px;
+  width: 420px;
+}
+
+div.product_5 > button{
+  background-color: hsla(47deg, 78%, 74%, 100); 
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  border-width: 1px; 
+  width: 160px;
+  height: 50px; 
+  font-size: 24px;
+  position: absolute;
+  left: 825px;
+  top: 420px;
+  cursor: pointer;
+} 

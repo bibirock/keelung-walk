@@ -1,0 +1,623 @@
+
+
+div.banner{
+  margin: 0 auto;
+  background-image: url("./images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 320px;
+}
+div.banner > p{
+  color: hsla(0deg, 0%, 100%, 81%);
+  background-color: hsla(0deg, 4%, 69%, 63%);
+  /* border: 1px solid white; */
+  border-radius: 5px;
+  width: max-content;
+  font-size: 30px;
+  padding: 3px 15px;
+  position: relative;
+  top: 134px;
+  left: 460px !important;
+}
+main.main{
+  padding-top: 100px;
+  /* border: 1px solid hsla(193deg, 100%, 96%, 1);  */
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: hsla(193deg, 100%, 96%, 100);
+}
+
+main > section{
+  width: 690px;
+  margin-left: 440px;
+}
+
+ /* 八斗子車站 */
+
+section div.station{
+  /* margin-top: 100px; */
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: 50px;
+}
+section div.background{
+  background-color: hsla(0deg, 0%, 100%, 75%);
+  width: 700px;
+  height: 333px;
+  position: absolute;
+  top: 11px;
+}
+
+div.station img{
+  border-radius: 15px;
+  width: 305px;
+  height: 272px;
+  position: absolute;
+  top: 30px;
+  left:20px;
+  object-fit: cover;
+}
+
+div.station p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 345px;
+  top: 60px;
+}
+
+div.station p.content{
+  font-size: 18px;
+  width: 325px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: 105px;
+}
+
+/* 鐵道自行車 */
+
+section div.bike{
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+div.bike img{
+  border-radius: 15px;
+  width: 305px;
+  height: 272px;
+  position: absolute;
+  top: 30px;
+  left:20px;
+  object-fit: cover;
+}
+
+div.bike p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 345px;
+  top: 60px;
+}
+
+div.bike p.content{
+  font-size: 18px;
+  width: 325px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: 105px;
+}
+
+/* 石頭火鍋 */
+
+section div.food{
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+div.food img{
+  border-radius: 15px;
+  width: 305px;
+  height: 272px;
+  position: absolute;
+  top: 30px;
+  left:20px;
+  object-fit: cover;
+}
+
+div.food p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 345px;
+  top: 60px;
+}
+
+div.food p.content{
+  font-size: 18px;
+  width: 325px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: 105px;
+}
+
+/* 海科館 */
+
+section div.mu{
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+div.mu img{
+  border-radius: 15px;
+  width: 305px;
+  height: 272px;
+  position: absolute;
+  top: 30px;
+  left:20px;
+  object-fit: cover;
+}
+
+div.mu p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 345px;
+  top: 60px;
+}
+
+div.mu p.content{
+  font-size: 18px;
+  width: 325px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: 105px;
+}
+
+/* 潮境公園 */
+
+section div.park{
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+div.park img{
+  border-radius: 15px;
+  width: 305px;
+  height: 272px;
+  position: absolute;
+  top: 30px;
+  left:20px;
+  object-fit: cover;
+}
+
+div.park p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 345px;
+  top: 60px;
+}
+
+div.park p.content{
+  font-size: 18px;
+  width: 325px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: 105px;
+}
+
+/* 廟口夜市 */
+
+section div.night_mark{
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: px;
+}
+
+section div.back{
+  background-color: hsla(0deg, 0%, 100%, 75%);
+  width: 700px;
+  height: 333px;
+  position: absolute;
+  top: 11px;
+}
+
+div.night_mark img{
+  border-radius: 15px;
+  width: 305px;
+  height: 272px;
+  position: absolute;
+  top: 30px !important;
+  left:20px;
+  object-fit: cover;
+}
+
+div.night_mark p.title{
+  font-size: 24px;
+  position: absolute;
+  left: 345px;
+  top: 60px;
+}
+
+div.night_mark p.content{
+  font-size: 18px;
+  width: 325px;
+  height: 170px;
+  position: absolute;
+  right: 20px;
+  top: 105px;
+}
+
+ /* 自訂行程 */
+
+p.try{
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+article{
+  position: relative;
+  width: 1200px;
+  display: inline-block;
+  margin-bottom:  100px;
+}
+
+article > img.try_1{
+  position: absolute;
+  top: 0px;
+  left: 260px;
+  z-index: 2;
+}
+
+article > img.try_2{
+  position: absolute;
+  top: 65px;
+  left: 520px;
+  z-index: 2;
+}
+
+article > img.try_3{
+  position: relative;
+  top: 130px;
+  left: 780px;
+  margin-bottom: 200px;
+  z-index: 2;
+}
+
+article > img.vector_1{
+  position: absolute;
+  left: 470px;
+  top: -10px;
+  transform: translateY(-30px);
+}
+
+article > img.vector_2{
+  position: absolute;
+  left: 730px;
+  top: 55px;
+  transform: translateY(-30px);
+}
+
+article > img.grad{
+  position: absolute;
+  left: 210px;
+  top: 65px;
+  z-index: 1;
+
+} 
+a.button{
+  border: 1px solid black;
+  box-shadow:1px 1px 1px lightgray;
+  background-color: hsla(47deg, 78%, 74%, 100); 
+  border-color: hsla(47deg, 78%, 74%, 100);
+  border-radius: 5px;
+  font-size: 24px; 
+  padding: 5px 20px;
+  position: relative;
+  bottom: 100px;
+  left: 500px
+}
+
+ /* 側邊導覽列 */
+
+aside.line{
+  background-color: hsla(160deg, 52%, 40%, .19);
+  border-radius: 5px;
+  box-shadow:1px 1px 1px lightgray;
+  width: 300px;
+  height: 680px;
+  position: absolute;
+  left: 60px;
+  top: 100px;
+}
+
+aside > p.title{
+  color: hsla(0deg, 2%, 33%, 1);
+  font-size: 24px;
+  position: absolute;
+  left: 100px;
+  top: 5px;
+}
+aside > div.background{
+  background-color: hsla(0deg, 0%, 100%, 73%);
+  width: 300px;
+  height: 635px;
+  position: absolute;
+  top: 40px;
+}
+
+/* 內容部分 */
+
+/* 八斗子車站 */
+ aside  div.station{
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 30px;
+  top: 35px;
+}
+
+aside  div.station > img.point_1{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+aside  div.station > img.vector_1{
+  width: 17px;
+  height: 19px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+aside p.content_1{
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+}
+
+aside p.walk{
+  font-size: 14px;
+  color: hsla(0deg, 2%, 33%, 88%);
+  position: absolute;
+  left: 40px;
+  top: 25px; 
+}
+
+/* 自行車 */
+aside  div.bike{
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 30px;
+  top: 130px;
+  
+}
+
+aside  div.bike > img.point_1{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+aside  div.bike > img.vector_1{
+  width: 17px;
+  height: 19px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+aside p.content_1{
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+}
+
+aside p.walk{
+  font-size: 14px;
+  color: hsla(0deg, 2%, 33%, 88%);
+  position: absolute;
+  left: 40px;
+  top: 25px; 
+}
+
+/* 石頭火鍋 */
+
+aside  div.food{
+  width: 250px;
+  height: 120px;
+  position: absolute;
+  left: 30px;
+  top: 230px;
+  
+}
+
+aside  div.food > img.point_1{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+aside  div.food > img.vector_1{
+  width: 17px;
+  height: 19px;
+  position: absolute;
+  left: 60px;
+  top: 90px;
+}
+
+aside p.content_1{
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+}
+
+aside p.walk_1{
+  font-size: 14px;
+  color: hsla(0deg, 2%, 33%, 88%);
+  position: absolute;
+  left: 40px;
+  top: 52px; 
+}
+
+/* 海洋博物館 */
+
+aside  div.mu{
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 30px;
+  top: 360px;
+  
+}
+
+aside  div.mu > img.point_1{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+aside  div.mu > img.vector_1{
+  width: 17px;
+  height: 19px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+aside p.content_1{
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+}
+
+aside p.walk{
+  font-size: 14px;
+  color: hsla(0deg, 2%, 33%, 88%);
+  position: absolute;
+  left: 40px;
+  top: 25px; 
+}
+
+/* 朝覲公園 */
+
+aside  div.park{
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 30px;
+  top: 460px;
+  
+}
+
+aside  div.park > img.point_1{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+aside  div.park > img.vector_1{
+  width: 17px;
+  height: 19px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+aside p.content_1{
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+}
+
+aside p.walk{
+  font-size: 14px;
+  color: hsla(0deg, 2%, 33%, 88%);
+  position: absolute;
+  left: 40px;
+  top: 25px; 
+}
+
+ /* 廟口夜市 */
+ aside  div.night{
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  left: 30px;
+  top: 565px;
+  
+}
+
+aside  div.night > img.point_2{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  top: 2px;
+}
+
+aside  div.night > img.vector_1{
+  width: 17px;
+  height: 19px;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+}
+
+aside p.content_1{
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+}
+
+aside p.walk{
+  font-size: 14px;
+  color: hsla(0deg, 2%, 33%, 88%);
+  position: absolute;
+  left: 40px;
+  top: 25px; 
+}
