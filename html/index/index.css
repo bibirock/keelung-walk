@@ -11,9 +11,9 @@
 
 /* ---------------輪播 ----------------------*/
 header{
-  border: 1px solid hsla(193deg, 100%, 96%, 100);
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 80px;
   background-color: hsla(193deg, 100%, 96%, 100);
 }
 
@@ -23,7 +23,7 @@ div.slideshow{
   overflow: hidden;
   height: 792px;
   width: 1200px;
-  margin-bottom: 85px;
+  /* margin-bottom: 85px; */
     
 }
 img.turn{
