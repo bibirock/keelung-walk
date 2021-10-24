@@ -16,8 +16,68 @@
   </head>
   <body>
       <nav class="navbar">
-        <a href="#"><img class="logo" src="../../use_photo/navbar/kwlogo.png "></a>
-        <a href="#"><img  class="logo2" src="../../use_photo/navbar/fron_logo.png"></a>
+        <aside class="aside">
+          <img class="x" src="../x.svg">
+          <div class="background"></div>
+          <ul>
+            <li class="a1">
+              <div class="theme_block">
+                主題景點
+                <ul class="theme">
+                  <li>
+                    <a href="../mountain/mountain.html">幽遊山徑</a>
+                  </li>
+                  <li>
+                    <a href="../mountain/mountain.html">無敵海景</a>
+                  </li>
+                  <li>
+                    <a href="../mountain/mountain.html">打卡熱點</a>
+                  </li>
+                  <li>
+                    <a href="../mountain/mountain.html">知性之旅</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="a1">
+              <div class="food_block">
+                小吃攻略
+                <ul class="food">
+                  <li>
+                    <a href="../night_market/night_market.html">廟口特輯</a>
+                  </li>
+                  <li>
+                    <a href="../night_market/night_market.html">咖啡之旅</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="a1">
+              <div class="travel_block">
+                行程安排
+                <ul class="travel">
+                  <li>
+                    <a href="../recommend/recommend.html">推薦行程</a>
+                  </li>
+                  <li>
+                    <a href="../custom/custom.html">客制規劃</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="a1">
+              <a href="../store/store.html">選物小店</a>
+            </li>
+            <li class="a1">
+              <a href="../master/master.html">達人分享</a>
+            </li>
+            <li class="a1">
+              <a href="#">會員專區</a>
+            </li>
+          </ul>
+        </aside>
+        <a href="../index/index.html"><img class="logo" src="../../use_photo/navbar/kwlogo.png "></a>
+        <a href="../index/index.html"><img  class="logo2" src="../../use_photo/navbar/fron_logo.png"></a>
         <div class="img"><img class="menu" src="../../use_photo/navbar/bg.png"></div>
         <p>選物小店</p>
       </nav>
@@ -89,15 +149,32 @@
           <p class="copy">Copyright  2021 基隆漫步 Keelung Walk All rights reserved.</p>
         </div>
         <div class="tiba">
-          <p>本網站為緯育TibaMe前端設計工程師班第104期學員專題作品，
+          <p>本網站為緯育TibaMe前端設計工程師班第72期學員專題作品
             <br>
-            本平台僅供學習、展示之用。參考資源:Pinterest|MightyJaxx|Minifig Builder|DDTStore。
-            <br>
-            &#42;若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+            &#42;若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>，後續會由專人協助處理。
             <br> 
-            [TibaMe-前端設計工程師養成班]請超連結<a href="https://www.facebook.com/webindex/">https://www.facebook.com/webindex/</a>
+          <a href="https://docs.google.com/document/d/1MTq7m2yDvs8SjwMVf-UZ7V_P-xti-CthnQFX-fWS7ks/edit?usp=sharing">-----網站參考資源請點此-----</a>
           </p>
         </div>
       </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+      // 點擊
+      $("div.img").on("click", function(){
+        // -open 的樣式切換
+      $("aside").toggleClass("-open");
+        });
+      });
+      $(function(){
+
+      // 點擊
+      $("img.x").on("click", function(){
+          // -open 的樣式切換
+      $("aside").removeClass("-open");
+          });
+      });
+    </script>
   </body>
 </html>

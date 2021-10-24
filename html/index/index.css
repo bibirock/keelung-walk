@@ -1,5 +1,6 @@
 @import url(../navbar.css);
 @import url(../footer.css);
+@import url(../aside.css);
 
 *{
   box-sizing: border-box;
@@ -219,9 +220,8 @@ div.banner_3{
 
 /* ----------------------------搭人分享 ---------------------*/
 div.pro{
-  text-align: center;
-  margin: 0px 0px 40px 0px;
-  padding-top: 100px;
+  margin: 0 auto;
+  padding: 100px 0px 40px 0px;
 }
 
 article.proman{
@@ -263,5 +263,5 @@ div.grid_item{
   font-size: 0;
   width: fit-content;
   padding: 20px 15px 20px ;
-  z-index: 2;
+  z-index: 1;
 }

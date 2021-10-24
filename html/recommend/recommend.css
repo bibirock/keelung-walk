@@ -1,4 +1,4 @@
-
+@import url("../aside.css");
 
 div.banner{
   margin: 0 auto;
@@ -29,11 +29,17 @@ main.main{
   background-color: hsla(193deg, 100%, 96%, 100);
 }
 
-main > section{
+main  section{
   width: 690px;
-  margin-left: 440px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 70px;
 }
-
+div.fit{
+  width: fit-content;
+  display: inline-block;
+  height: fit-content;
+}
  /* 八斗子車站 */
 
 section div.station{
@@ -298,14 +304,14 @@ article > img.try_1{
   position: absolute;
   top: 0px;
   left: 260px;
-  z-index: 2;
+  z-index: 1;
 }
 
 article > img.try_2{
   position: absolute;
   top: 65px;
   left: 520px;
-  z-index: 2;
+  z-index: 1;
 }
 
 article > img.try_3{
@@ -313,7 +319,7 @@ article > img.try_3{
   top: 130px;
   left: 780px;
   margin-bottom: 200px;
-  z-index: 2;
+  z-index: 1;
 }
 
 article > img.vector_1{
@@ -352,25 +358,27 @@ a.button{
 
  /* 側邊導覽列 */
 
-aside.line{
+article.line{
   background-color: hsla(160deg, 52%, 40%, .19);
   border-radius: 5px;
   box-shadow:1px 1px 1px lightgray;
   width: 300px;
   height: 680px;
-  position: absolute;
-  left: 60px;
-  top: 100px;
+  margin-left: 60px;
+  display: inline-block;
+  position: sticky;
+  top: 250px;
+  bottom: 0px;
 }
 
-aside > p.title{
+article.line > p.title{
   color: hsla(0deg, 2%, 33%, 1);
   font-size: 24px;
   position: absolute;
   left: 100px;
   top: 5px;
 }
-aside > div.background{
+article.line > div.background{
   background-color: hsla(0deg, 0%, 100%, 73%);
   width: 300px;
   height: 635px;
@@ -381,7 +389,7 @@ aside > div.background{
 /* 內容部分 */
 
 /* 八斗子車站 */
- aside  div.station{
+article.line  div.station{
   width: 250px;
   height: 80px;
   position: absolute;
@@ -389,7 +397,7 @@ aside > div.background{
   top: 35px;
 }
 
-aside  div.station > img.point_1{
+article.line  div.station > img.point_1{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -397,7 +405,7 @@ aside  div.station > img.point_1{
   top: 15px;
 }
 
-aside  div.station > img.vector_1{
+article.line  div.station > img.vector_1{
   width: 17px;
   height: 19px;
   position: absolute;
@@ -405,13 +413,13 @@ aside  div.station > img.vector_1{
   top: 60px;
 }
 
-aside p.content_1{
+article.line p.content_1{
   font-size: 18px;
   position: absolute;
   left: 40px;
 }
 
-aside p.walk{
+article.line p.walk{
   font-size: 14px;
   color: hsla(0deg, 2%, 33%, 88%);
   position: absolute;
@@ -420,7 +428,7 @@ aside p.walk{
 }
 
 /* 自行車 */
-aside  div.bike{
+article.line  div.bike{
   width: 250px;
   height: 80px;
   position: absolute;
@@ -429,7 +437,7 @@ aside  div.bike{
   
 }
 
-aside  div.bike > img.point_1{
+article.line  div.bike > img.point_1{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -437,7 +445,7 @@ aside  div.bike > img.point_1{
   top: 15px;
 }
 
-aside  div.bike > img.vector_1{
+article.line  div.bike > img.vector_1{
   width: 17px;
   height: 19px;
   position: absolute;
@@ -445,13 +453,13 @@ aside  div.bike > img.vector_1{
   top: 60px;
 }
 
-aside p.content_1{
+article.line p.content_1{
   font-size: 18px;
   position: absolute;
   left: 40px;
 }
 
-aside p.walk{
+article.line p.walk{
   font-size: 14px;
   color: hsla(0deg, 2%, 33%, 88%);
   position: absolute;
@@ -461,7 +469,7 @@ aside p.walk{
 
 /* 石頭火鍋 */
 
-aside  div.food{
+article.line  div.food{
   width: 250px;
   height: 120px;
   position: absolute;
@@ -470,7 +478,7 @@ aside  div.food{
   
 }
 
-aside  div.food > img.point_1{
+article.line  div.food > img.point_1{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -478,7 +486,7 @@ aside  div.food > img.point_1{
   top: 15px;
 }
 
-aside  div.food > img.vector_1{
+article.line  div.food > img.vector_1{
   width: 17px;
   height: 19px;
   position: absolute;
@@ -486,13 +494,13 @@ aside  div.food > img.vector_1{
   top: 90px;
 }
 
-aside p.content_1{
+article.line p.content_1{
   font-size: 18px;
   position: absolute;
   left: 40px;
 }
 
-aside p.walk_1{
+article.line p.walk_1{
   font-size: 14px;
   color: hsla(0deg, 2%, 33%, 88%);
   position: absolute;
@@ -502,7 +510,7 @@ aside p.walk_1{
 
 /* 海洋博物館 */
 
-aside  div.mu{
+article.line  div.mu{
   width: 250px;
   height: 80px;
   position: absolute;
@@ -511,7 +519,7 @@ aside  div.mu{
   
 }
 
-aside  div.mu > img.point_1{
+article.line  div.mu > img.point_1{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -519,7 +527,7 @@ aside  div.mu > img.point_1{
   top: 15px;
 }
 
-aside  div.mu > img.vector_1{
+article.line  div.mu > img.vector_1{
   width: 17px;
   height: 19px;
   position: absolute;
@@ -527,13 +535,13 @@ aside  div.mu > img.vector_1{
   top: 60px;
 }
 
-aside p.content_1{
+article.line p.content_1{
   font-size: 18px;
   position: absolute;
   left: 40px;
 }
 
-aside p.walk{
+article.line p.walk{
   font-size: 14px;
   color: hsla(0deg, 2%, 33%, 88%);
   position: absolute;
@@ -543,7 +551,7 @@ aside p.walk{
 
 /* 朝覲公園 */
 
-aside  div.park{
+article.line  div.park{
   width: 250px;
   height: 80px;
   position: absolute;
@@ -552,7 +560,7 @@ aside  div.park{
   
 }
 
-aside  div.park > img.point_1{
+article.line  div.park > img.point_1{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -560,7 +568,7 @@ aside  div.park > img.point_1{
   top: 15px;
 }
 
-aside  div.park > img.vector_1{
+article.line  div.park > img.vector_1{
   width: 17px;
   height: 19px;
   position: absolute;
@@ -568,13 +576,13 @@ aside  div.park > img.vector_1{
   top: 60px;
 }
 
-aside p.content_1{
+article.line p.content_1{
   font-size: 18px;
   position: absolute;
   left: 40px;
 }
 
-aside p.walk{
+article.line p.walk{
   font-size: 14px;
   color: hsla(0deg, 2%, 33%, 88%);
   position: absolute;
@@ -583,7 +591,7 @@ aside p.walk{
 }
 
  /* 廟口夜市 */
- aside  div.night{
+ article.line  div.night{
   width: 250px;
   height: 80px;
   position: absolute;
@@ -592,7 +600,7 @@ aside p.walk{
   
 }
 
-aside  div.night > img.point_2{
+article.line  div.night > img.point_2{
   width: 25px;
   height: 25px;
   position: absolute;
@@ -600,7 +608,7 @@ aside  div.night > img.point_2{
   top: 2px;
 }
 
-aside  div.night > img.vector_1{
+article.line  div.night > img.vector_1{
   width: 17px;
   height: 19px;
   position: absolute;
@@ -608,13 +616,13 @@ aside  div.night > img.vector_1{
   top: 60px;
 }
 
-aside p.content_1{
+article.line p.content_1{
   font-size: 18px;
   position: absolute;
   left: 40px;
 }
 
-aside p.walk{
+article.line p.walk{
   font-size: 14px;
   color: hsla(0deg, 2%, 33%, 88%);
   position: absolute;

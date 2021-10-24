@@ -1,5 +1,6 @@
 @import url(../navbar.css);
 @import url(../footer.css);
+@import url(../aside.css);
 
 *{
   box-sizing: border-box;
@@ -12,6 +13,9 @@ div.banner{
   background-size: cover;
   width: 1200px;
   height: 320px;
+}
+div.banner p{
+  transform: translateX(-50px);
 }
 
 main{

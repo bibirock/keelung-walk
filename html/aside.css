@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  text-decoration:none;
+  color: hsla(0deg, 2%, 33%, 100);
+  font-family: 'Noto Sans';
+  list-style: none;
+}
+
+body{
+  margin: 0;
+  position: relative;
+}
+img.x{
+  position: absolute;
+  top: 30px;
+  right: 60px; 
+  cursor: pointer;
+  z-index: 10;
+}
+aside.aside{
+  background-color: hsla(193deg, 63%, 88%, 100);
+  width: 500px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 8;
+  /* box-shadow: -1px 1px 10px lightgrey ; */
+  transform: translateX(110%);
+  transition: transform 1s ease-in-out;
+}
+
+aside.-open{
+  background-color: hsla(193deg, 63%, 88%, 100);
+  width: 500px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 8;
+  /* box-shadow: -1px 1px 10px lightgrey ; */
+  transform: translateX(0%);
+}
+
+aside > ul{
+  width: 500px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  overflow: hidden;
+  font-size: 24px;
+  padding-left: 300px;
+  padding-top: 76px;
+  line-height: 70px;
+}
+
+aside > div.background{
+  background-image: url(./logo/logo_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: -80px;
+  top: 120px;
+  height: 630px;
+  width: 630px;
+  z-index: -1;
+  opacity: .4 ;
+}
+div{
+  width: fit-content;
+}
+
+li.a1:hover{
+  transform: translateX(-5px); 
+  transition: all .5s;
+  font-size: 26px;
+  cursor: pointer;
+
+}
+/* --------------主題景點選單------------- */
+ul.theme{
+  padding: 0;
+  width: fit-content;
+  display: none;
+  font-size: 22px;
+}
+
+div.theme_block:hover ul.theme{
+  display: block;
+  line-height: 50px;
+}
+
+ul.theme > li:hover{
+  transform: translateX(-7px); 
+  transition: all .5s;
+  font-size: 23px;
+  text-decoration: underline;
+  
+}
+/* --------------小吃選單------------------ */
+ul.food{
+  padding: 0;
+  width: fit-content;
+  display: none;
+  font-size: 22px;
+}
+
+div.food_block:hover ul.food{
+  display: block;
+  line-height: 50px;
+}
+ul.food > li:hover{
+  transform: translateX(-7px); 
+  transition: all .5s;
+  font-size: 23px;
+  text-decoration: underline;
+}
+/* -----------------行程選單----------- */
+ul.travel{
+  padding: 0;
+  width: fit-content;
+  display: none;
+  line-height: 50px;
+  font-size: 22px;
+}
+
+div.travel_block:hover ul.travel{
+  display: block;
+  transition: display .5s;
+}
+
+ul.travel > li:hover{
+  transform: translateX(-7px); 
+  transition: all .5s;
+  font-size: 23px;
+  text-decoration: underline;
+}
