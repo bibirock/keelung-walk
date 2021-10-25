@@ -1,4 +1,6 @@
 @import url("../aside.css");
+@import url(../../js/slick-1.8.1/slick/slick.css);
+@import url(../../js/slick-1.8.1/slick/slick-theme.css);
 *{
   box-sizing: border-box;
   font-family: 'Noto Sans';
