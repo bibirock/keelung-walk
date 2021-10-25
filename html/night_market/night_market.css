@@ -5,6 +5,9 @@
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
+body{
+  background-color: hsla(193deg, 100%, 96%, 100);
+}
 div.banner{
   margin: 0 auto;
   background-image: url("./images/banner.jpg");
