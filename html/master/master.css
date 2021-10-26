@@ -1,9 +1,9 @@
 @import url(../navbar.css);
 @import url(../footer.css);
 @import url(../aside.css);
-/* body{
+body{
   background-color: hsla(193deg, 100%, 96%, 100);
-} */
+}
 
 div.banner{
   margin: 0 auto;
