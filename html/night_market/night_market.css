@@ -13,8 +13,10 @@ div.banner{
   background-image: url("./images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
-  height: 320px;
+  width: 100%;
+  min-width: 1200px;
+  height: 400px;
+  position: relative;
 }
 
 main{
@@ -48,8 +50,9 @@ section.info > p.content{
 }
 /* ---------------------------------羊肉魯飯 */
 div.background{
-  background-image: url("./images/background.png");
+  background-image: url("./images/waves/background.png");
   background-repeat: no-repeat;
+  width: 100%;
   padding-bottom: 30px;
 }
 article.food_1{

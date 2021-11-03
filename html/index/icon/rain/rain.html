@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.rain{
+      border: 1px solid black;
+      position: relative;
+      width: fit-content;
+    }
+    div.r_0,.r_1,.r_2,.r_3,.r_4,.r_5,.r_6{
+      position: absolute;
+      top: 10px;
+    }
+
+    div.r_1,.r_3,.r_5{
+      animation-name: rain;
+      animation-duration: 1s;
+      animation-iteration-count:infinite;
+      animation-timing-function: linear;
+    }
+    div.r_2,.r_4,.r_6{
+      animation-name: rain;
+      animation-duration: 1s;
+      animation-iteration-count:infinite;
+      animation-timing-function: linear;
+      animation-delay: 0.5s;
+    }
+    @keyframes rain {
+      0%{ transform: translateY(0) translateX(0);      
+      }
+      100%{
+        transform: translateY(10px) translateX(-5px); 
+      }
+    }
+    </style>
+</head>
+<body>
+  <div class="rain">
+    <divr class="r_0">
+      <img src="./rain_0.png">
+    </div>
+    <div class="r_1">
+      <img src="./rain_1.png">
+    </div>
+    <div class="r_2">
+      <img src="./rain_2.png">
+    </div>
+    <div class="r_3">
+      <img src="./rain_3.png">
+    </div>
+    <div class="r_4">
+      <img src="./rain_4.png">
+    </div>
+    <div class="r_5">
+      <img src="./rain_5.png">
+    </div>
+    <div class="r_6">
+      <img src="./rain_6.png">
+    </div>
+  </div>
+</body>
+</html>

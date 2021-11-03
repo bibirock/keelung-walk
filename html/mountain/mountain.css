@@ -1,5 +1,6 @@
 @import url(../aside.css);
-
+@import url(../navbar.css);
+@import url(./mountain_play.css);
 *{
   box-sizing: border-box;
   margin: 0;
@@ -12,24 +13,17 @@
 body{
   background-color: hsla(193deg, 100%, 96%, 100);
 }
+
 div.banner{
   margin: 0 auto;
   background-image: url("./images/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
-  height: 320px;
+  width: 100%;
+  min-width: 1200px;
+  height: 400px;
+  position: relative;
 }
-/* div.banner2{
-  margin: 0 auto;
-  background-image: url("../../正式使用圖片/導覽列組成/小波浪.png");
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 15px;
-  position: absolute;
-  left: 0;
-  top: 70px;
-} */
 
 p.sol{
   width: 1200px;
@@ -38,10 +32,24 @@ p.sol{
   font-size: 24px;
   color: hsla(0deg, 2%, 33%, 100);
 }
+div.bread{
+  width: 100%;
+  min-width: 1200px;
+  background-color: hsla(160deg, 52%, 40%, 15%);
+  height: 30px;
+}
+div.bread a{
+  line-height: 30px;
+}
+div.bread a:first-child{
+  padding-left: 80px;
+}
 
 main.main{
   border: 1px solid hsla(193deg, 100%, 96%, 100);
   background-color: hsla(193deg, 100%, 96%, 100);
+  /* width: 100%;
+  min-width: 1200px; */
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -76,14 +84,15 @@ div.valley > p.valley_content{
   top: 120px;
 }
 
-div.valley > img.valley_img{
-  border-radius: 20px;
+div.valley > div.valley_play{
+  border-radius: 15px;
   width: 530px;
   height: 355px;
   position: absolute;
   top: 45px;
   left: 0;
   transform: translate(-150px);
+  overflow: hidden;
 }
 
 div.valley > img.row{
@@ -149,6 +158,17 @@ div.rock > p.valley_content{
   position: absolute;
   left: 50px;
   top: 120px;
+}
+
+div.rock_play{
+  border-radius: 15px;
+  width: 530px;
+  height: 355px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  transform: translate(530px);
+  overflow: hidden;
 }
 
 div.rock > img.valley_img{
@@ -228,6 +248,16 @@ div.hole > p.valley_content{
   top: 120px;
 }
 
+div.hole > div.hole_play{
+  border-radius: 15px;
+  width: 530px;
+  height: 355px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  transform: translate(-150px);
+  overflow: hidden;
+}
 div.hole > img.valley_img{
   border-radius: 20px;
   width: 530px;
@@ -285,13 +315,20 @@ div.column{
   margin-top: 80px;
   margin-bottom: 80px;
   column-gap: 35px;
+  overflow: hidden;
 }
 
 div.column > a{
   display: block;
   margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
 }
 
+div.column a:hover{
+  transform: scaleX(1.01);
+}
 img.top_gap{
   margin-top: 135px;
 }
@@ -301,6 +338,7 @@ div.column > img{
   margin: 0;
   padding: 35px;
 }
+
 img.top_gap{
   margin-top: 37px;
 }
@@ -309,4 +347,31 @@ div.column > a.bottom_gap{
   display: block;
   margin-bottom: 0;
   height: 274px;
+  font-size: 0;
+}
+
+div.column > a{
+  font-size: 0;
+}
+
+.notes{
+  font-size: 26px;
+  color: white;
+  width: 274px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+a.go1:hover div{
+  backdrop-filter: blur(3px); 
+  transform: translateY(-100%);
+}
+
+a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,a.bottom_gap:hover div{
+  backdrop-filter: blur(3px); 
+  transform: translateY(-100%);
 }

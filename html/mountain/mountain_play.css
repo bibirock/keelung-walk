@@ -1,0 +1,475 @@
+
+/* -----------------忘憂谷----------------- */
+.valley_play ul.slides {
+  position: relative;
+  width: 530px;
+  height: 355px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.valley_play li.slide {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: .5s transform ease-in-out;
+}
+
+.valley_play .slide:nth-of-type(1) {
+  background-image: url("./images/valley/valley_5.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.valley_play .slide:nth-of-type(2) {
+  background-image: url("./images/valley/valley_2.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  left: 100%;
+  z-index: 0;
+}
+
+.valley_play .slide:nth-of-type(3) {
+  background-image: url("./images/valley/valley_4.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  left: 200%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.valley_play input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.valley_play .controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.valley_play .controls-visible label {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid lightgray;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(1):checked~.controls-visible label:nth-of-type(1) {
+  background-color: gray;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(2):checked~.controls-visible label:nth-of-type(2) {
+  background-color: gray;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(3):checked~.controls-visible label:nth-of-type(3) {
+  background-color: gray;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(1):checked~.slide {
+  transform: translatex(0%);
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(2):checked~.slide {
+  transform: translatex(-100%);
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(3):checked~.slide {
+  transform: translatex(-200%);
+}
+
+
+/* Left/Right Button Classes Below */
+
+.valley_play .navigator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  display: none;
+}
+
+.valley_play .navigator i {
+  font-size: 10px;
+  color: #333;
+}
+
+.valley_play i.fa-chevron-left:before {
+  content: " ";
+  background-image: url("icon/vectot.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 25px;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  cursor: pointer;
+}
+
+.valley_play i.fa-chevron-right:before {
+  content: " ";
+  background-image: url("icon/vector_right.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 25px;
+  z-index: 1000;
+  /* opacity: 0.8; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(1):checked~.navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(2):checked~.navigator:nth-of-type(2) {
+  display: flex;
+}
+
+.valley_play .slides input[type="radio"]:nth-of-type(3):checked~.navigator:nth-of-type(3) {
+  display: flex;
+}
+
+/* -----------------老鷹岩----------------- */
+.rock_play ul.slides {
+  position: relative;
+  width: 530px;
+  height: 355px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rock_play li.slide {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: .5s transform ease-in-out;
+}
+
+.rock_play .slide:nth-of-type(1) {
+  background-image: url("./images/rock/rock.jpg");
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.rock_play .slide:nth-of-type(2) {
+  background-image: url("./images/rock/rock_2.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  left: 100%;
+  z-index: 0;
+}
+
+.rock_play .slide:nth-of-type(3) {
+  background-image: url("./images/rock/rock_3.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  left: 200%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.rock_play input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.rock_play .controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.rock_play .controls-visible label {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid lightgray;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(1):checked~.controls-visible label:nth-of-type(1) {
+  background-color: gray;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(2):checked~.controls-visible label:nth-of-type(2) {
+  background-color: gray;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(3):checked~.controls-visible label:nth-of-type(3) {
+  background-color: gray;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(1):checked~.slide {
+  transform: translatex(0%);
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(2):checked~.slide {
+  transform: translatex(-100%);
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(3):checked~.slide {
+  transform: translatex(-200%);
+}
+
+
+/* Left/Right Button Classes Below */
+
+.rock_play .navigator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  display: none;
+}
+
+.rock_play .navigator i {
+  font-size: 10px;
+  color: #333;
+}
+
+.rock_play i.fa-chevron-left_1:before {
+  content: " ";
+  background-image: url("icon/vectot.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 25px;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  cursor: pointer;
+}
+
+.rock_play i.fa-chevron-right_1:before {
+  content: " ";
+  background-image: url("icon/vector_right.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 25px;
+  z-index: 1000;
+  /* opacity: 0.8; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(1):checked~.navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(2):checked~.navigator:nth-of-type(2) {
+  display: flex;
+}
+
+.rock_play .slides input[type="radio"]:nth-of-type(3):checked~.navigator:nth-of-type(3) {
+  display: flex;
+}
+/* ---------------------佛手洞---------------- */
+.hole_play ul.slides {
+  position: relative;
+  width: 530px;
+  height: 355px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hole_play li.slide {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: .5s transform ease-in-out;
+}
+
+.hole_play .slide:nth-of-type(1) {
+  background-image: url("./images/hole/hole.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.hole_play .slide:nth-of-type(2) {
+  background-image: url("./images/hole/hole_2.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  left: 100%;
+  z-index: 0;
+}
+
+.hole_play .slide:nth-of-type(3) {
+  background-image: url("./images/hole/hole_3.jpeg");
+  background-size: cover;
+  border-radius: 15px;
+  left: 200%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hole_play input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.hole_play .controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.hole_play .controls-visible label {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid lightgray;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(1):checked~.controls-visible label:nth-of-type(1) {
+  background-color: gray;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(2):checked~.controls-visible label:nth-of-type(2) {
+  background-color: gray;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(3):checked~.controls-visible label:nth-of-type(3) {
+  background-color: gray;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(1):checked~.slide {
+  transform: translatex(0%);
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(2):checked~.slide {
+  transform: translatex(-100%);
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(3):checked~.slide {
+  transform: translatex(-200%);
+}
+
+
+/* Left/Right Button Classes Below */
+.hole_play .navigator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  display: none;
+}
+
+.hole_play .navigator i {
+  font-size: 10px;
+  color: #333;
+}
+
+.hole_play i.fa-chevron-left_2:before {
+  content: " ";
+  background-image: url("icon/vectot.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 25px;
+  z-index: 1000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  cursor: pointer;
+}
+
+.hole_play i.fa-chevron-right_2:before {
+  content: " ";
+  background-image: url("icon/vector_right.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 25px;
+  z-index: 1000;
+  /* opacity: 0.8; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(1):checked~.navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(2):checked~.navigator:nth-of-type(2) {
+  display: flex;
+}
+
+.hole_play .slides input[type="radio"]:nth-of-type(3):checked~.navigator:nth-of-type(3) {
+  display: flex;
+}

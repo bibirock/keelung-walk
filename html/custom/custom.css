@@ -14,8 +14,10 @@ div.banner{
   background-image: url("./images/banner_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
-  height: 320px;
+  position:relative;
+  width: 100%;
+  min-width: 1200px;
+  height: 400px;
 }
 div.banner p{
   transform: translateX(-50px);

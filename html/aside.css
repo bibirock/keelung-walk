@@ -26,7 +26,7 @@ aside.aside{
   top: 0;
   overflow: hidden;
   z-index: 8;
-  /* box-shadow: -1px 1px 10px lightgrey ; */
+  /* box-shadow: 10px 10px 5px black ; */
   transform: translateX(110%);
   transition: transform 1s ease-in-out;
 }
@@ -42,8 +42,8 @@ aside.-open{
   z-index: 8;
   /* box-shadow: -1px 1px 10px lightgrey ; */
   transform: translateX(0%);
+ 
 }
-
 aside > ul{
   width: 500px;
   height: 100vh;
@@ -52,10 +52,10 @@ aside > ul{
   top: 0;
   z-index: 3;
   overflow: hidden;
-  font-size: 24px;
+  font-size: 30px;
   padding-left: 300px;
-  padding-top: 76px;
-  line-height: 70px;
+  padding-top: 120px;
+  line-height: 100px;
 }
 
 aside > div.background{
@@ -69,7 +69,7 @@ aside > div.background{
   height: 630px;
   width: 630px;
   z-index: -1;
-  opacity: .4 ;
+  opacity: .2 ;
 }
 div{
   width: fit-content;
@@ -78,36 +78,64 @@ div{
 li.a1:hover{
   transform: translateX(-5px); 
   transition: all .5s;
-  font-size: 26px;
+  font-size: 32px;
   cursor: pointer;
+  
 
 }
 /* --------------主題景點選單------------- */
 ul.theme{
-  padding: 0;
+  padding-left: 30px;
   width: fit-content;
   display: none;
   font-size: 22px;
+  transform: translateY(-10%);
+  line-height: 80px;
 }
 
 div.theme_block:hover ul.theme{
   display: block;
   line-height: 50px;
+  position: relative;
+}
+div.theme_block:hover ul.theme::before{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
 }
 
 ul.theme > li:hover{
   transform: translateX(-7px); 
   transition: all .5s;
   font-size: 23px;
-  text-decoration: underline;
-  
+  /* text-decoration: underline; */
+}
+ul.theme span{
+  position: relative;
+}
+ul.theme :hover span::before{
+  content: " ";
+  width: 22px;
+  height: 22px;
+  background-image: url("./logo/icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  left: -25px;
+  top: 5px;
 }
 /* --------------小吃選單------------------ */
 ul.food{
-  padding: 0;
+  padding-left: 30px;
   width: fit-content;
   display: none;
   font-size: 22px;
+  transform: translateY(-20%);
+  line-height: 50px;
 }
 
 div.food_block:hover ul.food{
@@ -118,15 +146,31 @@ ul.food > li:hover{
   transform: translateX(-7px); 
   transition: all .5s;
   font-size: 23px;
-  text-decoration: underline;
+  
 }
+ul.food span{
+  position: relative;
+}
+ul.food :hover span::before{
+  content: " ";
+  width: 22px;
+  height: 22px;
+  background-image: url("./logo/icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  left: -25px;
+  top: 5px;
+} 
 /* -----------------行程選單----------- */
 ul.travel{
-  padding: 0;
+  padding-left: 30px;
   width: fit-content;
   display: none;
-  line-height: 50px;
   font-size: 22px;
+  transform: translateY(-20%);
+  line-height: 50px;
 }
 
 div.travel_block:hover ul.travel{
@@ -138,5 +182,20 @@ ul.travel > li:hover{
   transform: translateX(-7px); 
   transition: all .5s;
   font-size: 23px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
+ul.travel span{
+  position: relative;
+}
+ul.travel :hover span::before{
+  content: " ";
+  width: 22px;
+  height: 22px;
+  background-image: url("./logo/icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  left: -25px;
+  top: 5px;
+} 

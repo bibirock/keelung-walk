@@ -7,11 +7,14 @@
 }
 div.footer{
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   height: 200px;
   background-color: hsla(0deg, 0%, 59%, .30);
   position: relative;
+  padding-left: 200px;
 }
+
 div.footer > div.index{
   display: flex;
   flex-direction: column;
@@ -31,7 +34,7 @@ div.footer > div.slogan > p.h1{
   width: 156px;
   height: 20px;
   position: absolute;
-  left: 235px;
+  left: 25%;
   top: 23px;
 }
 div.slogan a{
@@ -39,31 +42,31 @@ div.slogan a{
   width: 14px;
   height: 14px;
 }
-div.slogan > a.fbicon{
+ div.slogan > a.fbicon{
   position: absolute;
-  left: 393px;
+  left: 37.8%;
   top: 23px;
 }
 div.slogan > a.igicon{
   position: absolute;
-  left: 412px;
+  left: 39.5%;
   top: 23px;
 }
 div.slogan > p.local{
   font-size: 12px;
   position: absolute;
-  left: 235px;
+  left: 25%;
   top: 57px;
 }
 div.slogan > p.copy{
   font-size: 12px;
   position: absolute;
-  left: 235px;
+  left: 25%;
   top: 153px;
 }
 div.footer > div.tiba{
   font-size: 12px;
   position: absolute;
-  left: 670px;
+  right: 60px;
   bottom: 31px;
 }

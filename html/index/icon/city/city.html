@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+   div.city{
+      border: 1px solid black;
+      position: relative;
+      width: fit-content;
+    }
+    div.c_0,.c_1,.c_2{
+      position: absolute;
+      top: 10px;
+    }
+    div.c_1{
+      animation-name: city_water;
+      animation-duration: 3s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+    }
+    div.c_2{
+      animation-name: city_water_2;
+      animation-duration: 3s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes city_water{
+      0%{
+        transform: translateX(-3px);
+      }
+      50%{
+        transform: translateX(10px);
+      }
+    }
+    @keyframes city_water_2{
+      0%{
+        transform: translateX(3px);
+      }
+      50%{
+        transform: translateX(-10px);
+      }
+    }
+</style>
+<body>
+  <div class="city">
+    <divr class="c_0">
+      <img src="./city_0.png">
+    </div>
+    <div class="c_1">
+      <img src="./city_1.png">
+    </div>
+    <div class="c_2">
+      <img src="./city_2.png">
+    </div>
+  </div>
+</body>
+</html>

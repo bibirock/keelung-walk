@@ -9,70 +9,108 @@
   color: hsla(0deg, 2%, 33%, 100);
   font-family: 'Noto Sans';
 }
-body{
-  background-color: hsla(193deg, 100%, 96%, 100);
+
+@keyframes scroll{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(20px);
+  }
 }
 
 /* ---------------輪播 ----------------------*/
 header{
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   margin: 0 auto;
   padding-bottom: 100px;
   background-color: hsla(193deg, 100%, 96%, 100);
+  overflow: hidden;
 }
 
 div.slideshow{
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  height: 792px;
-  width: 1200px;
-  /* margin-bottom: 85px; */
+  height: 820px;
+  width: 100%;
+ 
+}
+@keyframes slide {
     
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+  
 }
 img.turn{
+  /* width: 100%; */
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   object-fit: cover;
+  animation: slide 15s infinite;
+  opacity: 0;
+  /* overflow: hidden; */
 }
+img:nth-child(2){
+  animation-delay: 5s
+}
+      
+img:nth-child(3){
+  animation-delay: 10s
+}
+
+
 img.scroll{
   position: absolute;
   bottom: 30px;
   left: 70px;
   z-index: 1;
   opacity: .8;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-img.change{
-  position: absolute;
-  left: 580px;
-  bottom: 20px;
-  transform: translateX(-50%);
-  z-index: 1;
-}
+
 /* -----------------滑動可視範圍------------ */
 
 main{
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   background-color: hsla(193deg, 100%, 96%, 100);
   margin: 0 auto;
 }
 
 
 main.main  div.scroll{
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   height: 250px;
   background-image: url("./images/banner_2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-position: 0px 50px; 
-  background-size: 95%;
+  background-size: 99.99%;
   margin-bottom: 85px;
 }
 
 /* --------------內容部分 ----------------*/
 article.content_1{
+  margin: 0 auto;
   width: 1200px;
   font-size: 0;
   padding-bottom: 100px;
@@ -97,9 +135,39 @@ div.text > p.content{
   margin-left: 120px;
 }
 div.images_1{
+  margin-left: 100px;
   display: inline-block;
   width: 250px;
   margin-top: 50px;
+}
+div.rain{
+  position: relative;
+  width: fit-content;
+}
+div.r_0,.r_1,.r_2,.r_3,.r_4,.r_5,.r_6{
+  position: absolute;
+  top: 145px;
+}
+
+div.r_1,.r_3,.r_5{
+  animation-name: rain;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
+}
+div.r_2,.r_4,.r_6{
+  animation-name: rain;
+  animation-duration: 1s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+}
+@keyframes rain {
+  0%{ transform: translateY(0) translateX(0);      
+  }
+  100%{
+    transform: translateY(10px) translateX(-5px); 
+  }
 }
 img.row{
   position: absolute;
@@ -108,6 +176,7 @@ img.row{
 }
 /* -----------------海口味---------------- */
 article.content_2{
+  margin: 0 auto;
   width: 1200px;
   font-size: 0;
   position: relative;
@@ -138,6 +207,43 @@ div.images_2{
   display: inline-block;
   width: 250px;
 }
+div.city{
+  position: relative;
+  width: fit-content;
+}
+div.c_0,.c_1,.c_2{
+  position: absolute;
+  top: 10px;
+}
+div.c_1{
+  animation-name: city_water;
+  animation-duration: 3s;
+  animation-timing-function: steps(3);
+  animation-iteration-count: 3;
+}
+div.c_2{
+  animation-name: city_water_2;
+  animation-duration: 3s;
+  animation-timing-function: steps(3);
+  animation-iteration-count: 3;
+}
+
+@keyframes city_water{
+  0%{
+    transform: translateX(-3px);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+}
+@keyframes city_water_2{
+  0%{
+    transform: translateX(3px);
+  }
+  50%{
+    transform: translateX(-10px);
+  }
+}
 
 /* --------------開始基隆之旅 ----------*/
 article.start{
@@ -145,31 +251,34 @@ article.start{
   background-image: url(./images/start.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
+  width: 100%;
+  min-width: 1200px;
   height: 415px;
   position: relative;
 }
 article.start > p{
 border-radius: 5px;
- font-size: 30px;
- width: fit-content;
- color: white;
- background-color: hsla(0deg, 8%, 1%, .39);
- padding: 5px 10px;
- position: absolute;
- left: 380px;
- top: 190px;
+font-size: 30px;
+width: fit-content;
+color: white;
+background-color: hsla(0deg, 8%, 1%, .39);
+padding: 5px 10px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -40%);
 }
 
 /* ------------------主題景點-------------- */
 article.theme{
   position: relative;
-  padding-bottom: 120px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1200px;
 }
 article.theme > div.icon{
-  width: fit-content;
   margin: 0 auto;
-  height: 50px;
+  
 }
 div.background{
   margin-top: 40px;
@@ -178,6 +287,7 @@ div.background{
   height: 350px;
   border-radius: 15px;
   position: relative;
+  transform: translateX(-50px);
 }
 div.background > a{
   font-size: 24px;
@@ -185,7 +295,10 @@ div.background > a{
   left: 200px;
   bottom: 20px;
 }
-
+div.block_2{
+  margin: 0 auto;
+  width: 1200px;
+}
 div.background > img#left{
   position: absolute;
   left: 170px;
@@ -202,23 +315,25 @@ div.background > img#right{
   cursor: pointer;
 }
 
-article.theme > div.images{
-  width: 1100px;
+div.images{
+  width: 1200px;
   display: inline-flex;
   justify-content: space-between;
   position: absolute;
-  left: 50px;
-  top: 130px
+  top: 130px;
 }
 div.images  img.down{
   transform: translateY(70px);
 }
 
 div.banner_3{
-  width: 1200px;
+  margin-top: 100px;
+  width: 100%;
+  min-width: 1200px;
   height: 320px;
   background-image: url(./images/banner_3.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* ----------------------------搭人分享 ---------------------*/
@@ -268,3 +383,4 @@ div.grid_item{
   padding: 20px 15px 20px ;
   z-index: 1;
 }
+

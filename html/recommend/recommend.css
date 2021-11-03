@@ -9,21 +9,12 @@ div.banner{
   background-image: url("./images/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
-  height: 320px;
-}
-div.banner > p{
-  color: hsla(0deg, 0%, 100%, 81%);
-  background-color: hsla(0deg, 4%, 69%, 63%);
-  /* border: 1px solid white; */
-  border-radius: 5px;
-  width: max-content;
-  font-size: 30px;
-  padding: 3px 15px;
+  width: 100%;
+  min-width: 1200px;
+  height: 400px;
   position: relative;
-  top: 134px;
-  left: 460px !important;
 }
+
 main.main{
   padding-top: 100px;
   /* border: 1px solid hsla(193deg, 100%, 96%, 1);  */
