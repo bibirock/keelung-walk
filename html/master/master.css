@@ -59,7 +59,6 @@ article.two div.background{
   height: 1080px;
   margin: 0 auto;
   padding-top: 216px;
-
   position: relative;
 }
 article.two p.one{
@@ -89,9 +88,8 @@ div.background img:nth-child(4){
 }
 /* ----------------------第三區------------------ */
 article.three{
-  border: 1px solid red;
   margin-top: 72px;
-  /* position: relative; */
+  position: relative; 
   font-size: 0;
   z-index: 2;
 }
@@ -104,12 +102,12 @@ div.middle{
   margin-bottom: 50px;
   z-index: 100;
 }
-article.three  img.back{
+article.three > img.back{
   position: absolute;
   left: 0;
-  top: 2300px;
-  z-index: 0;
+  top: 168px;
 }
+
 article.three > img:nth-child(2){
   margin: 70px 0px 0px 50px;
 }

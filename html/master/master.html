@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>達人分享</title>
     <link href="./master.css" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <link href="../navbar.css" rel="stylesheet">
     <link href="../footer.css" rel="stylesheet">
     <link rel="icon" href="./icons/icon.ico" type="image/x-icon"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
       <nav class="navbar">
@@ -91,25 +89,24 @@
           <img src="./images/block_1.png">
           <p>林依，在地生活28年，是樂團的主唱，也是旅遊部落格作家，就讓在地人來帶大家探訪神祕小店!</p>
         </article>
-        <p class="title">“說到基隆就不能不提到特別的咖啡文化了基隆可說是台灣最早的咖啡城市，早期的基隆”港是國際貿易最繁盛的港口，也是接觸西化最快速的地方，擁有發展歷史最久、最密集的咖啡廳。</p>
+        <p class="title" data-aos="fade-up">“說到基隆就不能不提到特別的咖啡文化了基隆可說是台灣最早的咖啡城市，早期的基隆”港是國際貿易最繁盛的港口，也是接觸西化最快速的地方，擁有發展歷史最久、最密集的咖啡廳。</p>
         <article class="two">
-          <div class="background">
-            <p class="one">基隆的咖啡文化有著獨特的韻味，用一杯賽風壺煮的咖啡醒醒頭腦，開始一天的生活，在基隆喝咖啡就是這麼生活化。</p>
-              <img src="./images/block_2_1.png">
-              <img src="images/block_2_2.png">
-              <img src="./images/block_2_3.png">
-            <p class="two">金豆舊店的原址位於31號陸橋下，因想為客人帶來更完整的品嘗咖啡過程，
+          <div class="background" >
+            <p class="one" data-aos="zoom-in">基隆的咖啡文化有著獨特的韻味，用一杯賽風壺煮的咖啡醒醒頭腦，開始一天的生活，在基隆喝咖啡就是這麼生活化。</p>
+              <img src="./images/block_2_1.png" data-aos="zoom-in">
+              <img src="images/block_2_2.png" data-aos="zoom-in">
+              <img src="./images/block_2_3.png" data-aos="zoom-in">
+            <p class="two" data-aos="zoom-in">金豆舊店的原址位於31號陸橋下，因想為客人帶來更完整的品嘗咖啡過程，
               所以在現址開了一間有室內座位的店面，保留了房子原始的格局包含挑高的空間及巴洛克風的外觀。</p>
           </div>
         </article>
         <article class="three">
           <div class="middle">
             <img class="block_3_1" src="./images/block_3_1.png">
-            <img class="back" src="./icons/Ellipse 26.svg">
             <img class="block_3_2" src="./images/block_3_2.png">
           </div>
           <p>二樓為展覽區，不定期會展出基隆相關的文藝展覽，是市中心這一帶少有的結合咖啡與文藝的店家在二樓晃晃，仍保有老屋的味道，窗外車水馬龍的吵雜聲似乎都被凍結了。</p>
-          
+          <img class="back" src="./icons/Ellipse 26.svg" data-aos="fade-right">
         </article>
         <article class="four">
           <div class="middle">
@@ -120,9 +117,8 @@
           <div class="middle_1">
             <img id="img" src="./images/block_4_3.png">
             <p class="two">附上的小甜點，鬆軟微甜，搭配咖啡很棒，這樣子品味咖啡也算是給自己驚喜，來店內的你不仿也試試看。</p>
-            <img class="back" src="./icons/Ellipse 25.svg">
+            <img class="back" src="./icons/Ellipse 25.svg" data-aos="fade-left" >
           </div>
-          
         </article>
       </main>
       <div class="footer">
@@ -166,6 +162,10 @@
         $("aside").removeClass("-open");
             });
         });
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
       </script>
   </body>
 </html>

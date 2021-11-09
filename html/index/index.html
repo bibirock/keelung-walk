@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>基隆漫步</title>
   <link href="./index.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="../navbar.css" rel="stylesheet">
   <link href="../footer.css" rel="stylesheet">
   <link rel="icon" href="./icon/title_icon.ico" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="./index_rwd.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
   <nav class="navbar">
@@ -90,90 +92,93 @@
   </header>
   <main class="main">
     <div class="scroll"></div>
-    <article class="content_1">
-      <div class="text">
-        <p class="title">雨之都</p>
-        <p class="content">
-          基隆市原名雞籠，因氣候關係擁有「雨都」之稱，為台灣本島最北端的城市三面背山，正面臨海，擁有優越的條件築成天然港灣，日治時由日本人修建成港口，使基隆成為日本統治時期在台灣最重要的港口，可見因為地理位置的重要性基隆在台灣歷史的痕跡上佔有一席之地。
-          <br />
-          <br />
-          市中心的崁仔頂街，是清軍在基隆所興建的第一條街、「獅球嶺隧道」更是台灣鐵道史上的第一條隧道，而基隆「吉古拉」的味道更受到當時日本人所留下的影響。
-          <br />
-          <br />
-          基隆目前共有七個行政區域，另有七個附屬島嶼，分別為和平島、中山仔嶼、桶盤嶼、基隆嶼、彭佳嶼、棉花嶼及花瓶嶼，其中和平島(舊社寮島)、中山仔嶼、桶盤嶼三島今已連為一體，即今日所稱和平島，各區域和島嶼依隨山、海、河、港而有不同的景致與遊賞路線
-        </p>
+    <article class="content_1" >
+      <div class="flex">
+        <div class="text">
+          <p class="title" data-aos="fade">雨之都</p>
+          <p class="content" data-aos="fade-up">
+            基隆市原名雞籠，因氣候關係擁有「雨都」之稱，為台灣本島最北端的城市三面背山，正面臨海，擁有優越的條件築成天然港灣，日治時由日本人修建成港口，使基隆成為日本統治時期在台灣最重要的港口，可見因為地理位置的重要性基隆在台灣歷史的痕跡上佔有一席之地。
+            <br />
+            <br />
+            市中心的崁仔頂街，是清軍在基隆所興建的第一條街、「獅球嶺隧道」更是台灣鐵道史上的第一條隧道，而基隆「吉古拉」的味道更受到當時日本人所留下的影響。
+            <br />
+            <br />
+            基隆目前共有七個行政區域，另有七個附屬島嶼，分別為和平島、中山仔嶼、桶盤嶼、基隆嶼、彭佳嶼、棉花嶼及花瓶嶼，其中和平島(舊社寮島)、中山仔嶼、桶盤嶼三島今已連為一體，即今日所稱和平島，各區域和島嶼依隨山、海、河、港而有不同的景致與遊賞路線
+          </p>
+        </div>
+        <div class="images_1" >
+          <div class="rain" >
+            <divr class="r_0" >
+              <img src="./icon/rain/rain_0.png" data-aos="fade">
+            </div>
+            <div class="r_1">
+              <img src="./icon/rain/rain_1.png" data-aos="fade">
+            </div>
+            <div class="r_2">
+              <img src="./icon/rain/rain_2.png" data-aos="fade">
+            </div>
+            <div class="r_3">
+              <img src="./icon/rain/rain_3.png" data-aos="fade">
+            </div>
+            <div class="r_4">
+              <img src="./icon/rain/rain_4.png" data-aos="fade">
+            </div>
+            <div class="r_5">
+              <img src="./icon/rain/rain_5.png" data-aos="fade">
+            </div>
+            <div class="r_6">
+              <img src="./icon/rain/rain_6.png" data-aos="fade">
+            </div>
+        </div>
+        <img class="row" src="./icon/row.png">
       </div>
-      <div class="images_1">
-        <div class="rain">
-          <divr class="r_0">
-            <img src="./icon/rain/rain_0.png">
-          </div>
-          <div class="r_1">
-            <img src="./icon/rain/rain_1.png">
-          </div>
-          <div class="r_2">
-            <img src="./icon/rain/rain_2.png">
-          </div>
-          <div class="r_3">
-            <img src="./icon/rain/rain_3.png">
-          </div>
-          <div class="r_4">
-            <img src="./icon/rain/rain_4.png">
-          </div>
-          <div class="r_5">
-            <img src="./icon/rain/rain_5.png">
-          </div>
-          <div class="r_6">
-            <img src="./icon/rain/rain_6.png">
-          </div>
-        <!-- <img src="./icon/rain.png"> -->
-      </div>
-      <img class="row" src="./icon/row.png">
     </article>
-    <article class="content_2">
-      <div class="images_2">
-        <div class="city">
-          <divr class="c_0">
-            <img src="./icon/city/city_0.png">
-          </div>
-          <div class="c_1">
-            <img src="./icon/city/city_1.png">
-          </div>
-          <div class="c_2">
-            <img src="./icon/city/city_2.png">
+    <article class="content_2" >
+      <div class="flex">
+        <div class="images_2" data-aos="fade">
+          <div class="city">
+            <divr class="c_0">
+              <img src="./icon/city/city_0.png">
+            </div>
+            <div class="c_1">
+              <img src="./icon/city/city_1.png">
+            </div>
+            <div class="c_2">
+              <img src="./icon/city/city_2.png">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="text">
-        <p class="title">海口味</p>
-        <p class="content">
-          基隆港全台聞名，港區範圍直入市中心區，是港灣城市中少見的特例，，靠海的基隆，生活離不開海洋，受到歷史與移民因素影響，基隆可以嚐到豐富而多樣的美食，來此感受一下海口人重口味!
-          <br />
-          <br />
-          巷弄的基隆，是不是有似曾相識的感覺呢？漫漫雨都的動人風情在許多電影、MV、電視劇裡都能看見，讓我們跟著經典畫面來場雨都邂逅。
-          <br />
-          <br />
-          如果你對基隆的印象僅停留在新鮮海產與廟口小吃的話，那一定要重新認識基隆，我們擁有天然的地質景觀、絕美的海岸線、獨特的海港風情、闔家歡樂的活動、新舊融合的生命力及多元的飲食文化，等著旅客前來體驗！
-        </p>
+        <div class="text">
+          <p class="title" data-aos="fade">海口味</p>
+          <p class="content" data-aos="fade-up">
+            基隆港全台聞名，港區範圍直入市中心區，是港灣城市中少見的特例，，靠海的基隆，生活離不開海洋，受到歷史與移民因素影響，基隆可以嚐到豐富而多樣的美食，來此感受一下海口人重口味!
+            <br />
+            <br />
+            巷弄的基隆，是不是有似曾相識的感覺呢？漫漫雨都的動人風情在許多電影、MV、電視劇裡都能看見，讓我們跟著經典畫面來場雨都邂逅。
+            <br />
+            <br />
+            如果你對基隆的印象僅停留在新鮮海產與廟口小吃的話，那一定要重新認識基隆，我們擁有天然的地質景觀、絕美的海岸線、獨特的海港風情、闔家歡樂的活動、新舊融合的生命力及多元的飲食文化，等著旅客前來體驗！
+          </p>
+        </div>
       </div>
     </article>
     <article class="start">
       <p>現在，開始你的基隆之旅吧!</p>
     </article>
-    <article class="theme" >
-      <div class="icon">
+    <article class="theme" data-aos="fade-up-right">
+      <div class="icon" >
         <img src="./icon/theme.png">
       </div>
-      <div class="block_2">
+      <div class="block_2" >
         <div class="background">
-          <a href="../mountain/mountain.html">幽遊山徑</a>
+          <a id="theme" href="../mountain/mountain.html">幽遊山徑</a>
           <img id="left" src="icon/left_vector.svg">
           <img id="right" src="icon/right_vector.svg">
         </div>
         <div class="images">
-          <a href="../mountain/mountain.html"><img src="./images/vector/the1.png"></a>
+          <a href="../mountain/mountain.html"><img class="rwd" src="./images/vector/the1.png"></a>
           <a href="../mountain/mountain.html"><img class="down" src="./images/vector/the2.png"></a>
-          <a href="../mountain/mountain.html"><img src="./images/vector/the3.png"></a>
+          <a href="../mountain/mountain.html"><img class="last" src="./images/vector/the3.png"></a>
         </div>
       </div>
     </article>
@@ -181,28 +186,28 @@
     <article class="proman">
       <div class="background_2"></div>
       <div class="background_3"></div>
-      <div class="pro">
-        <img src="./icon/proman.png">
+      <div class="pro" >
+        <img src="./icon/proman.png" data-aos="fade-up-left">
       </div>
-      <div class="grid">
-        <div class="grid_item">
-          <a href="../master/master.html"><img class="po1" src="./images/proman/p1.png"></a>
-        </div>
-        <div class="grid_item">
-          <a href="../master/master.html"><img class="po2" src="./images/proman/p3.png"></a>
-        </div>
-        <div class="grid_item">
-          <a href="../master/master.html"><img class="po3" src="./images/proman/p2.png"></a>
-        </div>
-        <div class="grid_item">
-          <a href="../master/master.html"><img class="po4" src="./images/proman/p4.png"></a>
-        </div>
-        <div class="grid_item">
-          <a href="../master/master.html"><img class="po5" src="./images/proman/p5.png"></a>
-        </div>
-        <div class="grid_item">
-          <a href="../master/master.html"><img class="po6" src="./images/proman/p6.png"></a>
-        </div>
+      <div class="grid" data-aos="fade-up-left">
+          <div class="grid_item">
+            <a href="../master/master.html"><img class="po1" src="./images/proman/p1.png"></a>
+          </div>
+          <div class="grid_item">
+            <a href="../master/master.html"><img class="po2" src="./images/proman/p3.png"></a>
+          </div>
+          <div class="grid_item">
+            <a href="../master/master.html"><img class="po3" src="./images/proman/p2.png"></a>
+          </div>
+          <div class="grid_item">
+            <a href="../master/master.html"><img class="po4" src="./images/proman/p4.png"></a>
+          </div>
+          <div class="grid_item">
+            <a href="../master/master.html"><img class="po5" src="./images/proman/p5.png"></a>
+          </div>
+          <div class="grid_item">
+            <a href="../master/master.html"><img class="po6" src="./images/proman/p6.png"></a>
+          </div>
       </div>
     </article>
   </main>
@@ -216,8 +221,6 @@
     </div>
     <div class="slogan">
       <p class="h1">基隆漫步 Keelung Walk</p>
-      <!-- <a class="fbicon" href="#"><img src="../../use_photo/footer/fb.png"></a>
-      <a class="igicon" href="#"><img src="../../use_photo/footer/ig.png"></a> -->
       <p class="local">連結在地生活、人物、文化、飲食、旅遊
         深入更多的精彩。</p>
       <p class="copy">Copyright 2021 基隆漫步 Keelung Walk All rights reserved.</p>
@@ -232,13 +235,19 @@
       </p>
     </div>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="../vendors/JQuery/JQueryCDN.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="index.js"></script>
   <script>
-    
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
   </script>
-  
 </body>
-
 </html>
