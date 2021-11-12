@@ -1,0 +1,274 @@
+@import url(../aside.css);
+@import url(../navbar.css);
+@import url(./mountain_play.css);
+*{
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration:none;
+  color: hsla(0deg, 2%, 33%, 100);
+  font-family: 'Noto Sans';
+}
+
+body{
+  background-color: hsla(193deg, 100%, 96%, 100);
+}
+
+div.banner{
+  margin: 0 auto;
+  background-image: url("./images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-width: 1200px;
+  height: 400px;
+  position: relative;
+}
+
+p.sol{
+  width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+  font-size: 24px;
+  color: hsla(0deg, 2%, 33%, 100);
+}
+div.bread{
+  width: 100%;
+  min-width: 1200px;
+  background-color: hsla(160deg, 52%, 40%, 15%);
+  height: 30px;
+}
+div.bread a{
+  line-height: 30px;
+}
+div.bread a:first-child{
+  padding-left: 80px;
+}
+
+main.main{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  background-color: hsla(193deg, 100%, 96%, 100);
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+/*----------------------- 忘憂谷 -----------------------*/
+div.valley{
+  border-radius: 20px;
+  width: 900px;
+  height: 450px;
+  background-color: hsla(160deg, 52%, 40%, 15%);
+  position: relative;
+  right: 0;
+  align-self: flex-end;
+  display: flex;
+}
+div.valley_play{
+  margin: 47px 20px 0px 0px;
+  overflow: hidden;
+  width: 530px;
+}
+div.valley_content{
+  display: flex;
+  /* transform: translateX(-120px); */
+}
+p.content_title{
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+  color: hsla(0deg, 2%, 33%, 100);
+}
+p.content_text{
+  font-size: 18px;
+  width: 450px;
+  height: 175px;
+}
+div.text{
+  margin: 47px 20px 0px 0px;
+}
+div.text > .method{
+  width: 100%;
+  position: relative
+}
+.method .row{
+  position: absolute;
+  top: 0;
+}
+.method .icon{
+  margin-top: 10px;
+}
+.method p{
+  font-size: 18px;
+}
+.method p.position{
+  position: absolute;
+  top: 7px;
+  left: 25px;
+}
+.method p.bus{
+  position: absolute;
+  top: 41px;
+  left: 25px;
+}
+.method p.park{
+  position: absolute;
+  top: 76px;
+  left: 25px;
+}
+/* -------------------老鷹岩 ------------*/
+div.rock{
+  margin-top: 120px;
+  border-radius: 20px;
+  width: 900px;
+  height: 450px;
+  background-color: hsla(160deg, 52%, 40%, 15%);
+  position: relative;
+  right: 0;
+  align-self: flex-start;
+  display: flex;
+}
+div.rock_play{
+  margin: 47px 20px 0px 0px;
+  overflow: hidden;
+  width: 530px;
+}
+div.rock_content{
+  display: flex;
+  flex-direction: row-reverse;
+}
+div.rock_content > div.text > .valley_content{
+  font-size: 18px;
+  width: 450px;
+  height: 175px;
+}
+div.text{
+  margin: 47px 20px 0px 0px;
+}
+
+/* 猜你也想去 */
+div.guess > p{
+  font-size: 30px;
+  margin-left: 507px;
+}
+div.column{
+  width: 900px;
+  column-count: 3;
+  margin-left: 150px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  column-gap: 35px;
+  overflow: hidden;
+}
+
+div.column > a{
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+
+div.column a:hover{
+  transform: scaleX(1.01);
+}
+img.top_gap{
+  margin-top: 135px;
+}
+
+div.column > img{
+  column-gap: 35px;
+  margin: 0;
+  padding: 35px;
+}
+
+img.top_gap{
+  margin-top: 37px;
+}
+
+div.column > a.bottom_gap{
+  display: block;
+  margin-bottom: 0;
+  height: 274px;
+  font-size: 0;
+}
+
+div.column > a{
+  font-size: 0;
+}
+
+.notes{
+  font-size: 26px;
+  color: white;
+  width: 274px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+a.go1:hover div{
+  backdrop-filter: blur(3px); 
+  transform: translateY(-100%);
+}
+
+a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,a.bottom_gap:hover div{
+  backdrop-filter: blur(3px); 
+  transform: translateY(-100%);
+}
+@media screen and (max-width: 575.98px){
+  div.banner{
+    margin: 0 auto;
+    background-image: url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  
+  p.sol{
+    width: 340px;
+    margin: 80px auto;
+    font-size: 20px;
+    text-align:justify;
+    color: hsla(0deg, 2%, 33%, 100);
+  }
+  div.bread{
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    height: 30px;
+  }
+  div.center{
+    width: fit-content;
+    margin: 0 auto;
+  }
+  div.bread a{
+    line-height: 30px;
+  }
+  div.bread a:first-child{
+    padding-left: 0px;
+    text-align: center;
+  }
+  main.main{
+    border: 1px solid black;
+    background-color: hsla(193deg, 100%, 96%, 100);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+@media (min-width:576px) and (max-width: 767.98px){
+ 
+}
+@media (min-width:768px) and (max-width: 991.98px){
+  
+}
+@media (min-width:992px) and (max-width: 1199.98px){
+
+}

@@ -71,6 +71,15 @@ div.footer > div.tiba{
   bottom: 31px;
 }
 /* ---------------rwd---------- */
+@media (max-width: 320px) {
+  div.footer > div.tiba{
+    font-size: 12px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+  }
+}
 @media (max-width: 575.98px) {
   div.footer{
     margin: 0 auto;
@@ -123,10 +132,9 @@ div.footer > div.tiba{
     top: 140px;
   }
   div.footer > div.tiba{
-    
     font-size: 12px;
     position: absolute;
-    width: 300px;
+    width: 250px;
     left: 20%;
     top: 230px;
   }
