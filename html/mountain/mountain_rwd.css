@@ -47,12 +47,13 @@ div.bread a:first-child{
 main.main{
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   background-color: hsla(193deg, 100%, 96%, 100);
   width: 100%;
   max-width: 1400px;
+  min-width: 1024;
   margin: 0 auto;
   position: relative;
+  /* overflow: hidden; */
 }
 /*----------------------- 忘憂谷 -----------------------*/
 div.valley{
@@ -71,8 +72,9 @@ div.valley_play{
   width: 530px;
 }
 div.valley_content{
+  margin-left: -120px;
   display: flex;
-  /* transform: translateX(-120px); */
+  /* transform: translateX(-140px); */
 }
 p.content_title{
   margin-bottom: 30px;
@@ -86,7 +88,7 @@ p.content_text{
   height: 175px;
 }
 div.text{
-  margin: 47px 20px 0px 0px;
+  margin: 47px 20px 20px 0px;
 }
 div.text > .method{
   width: 100%;
@@ -94,6 +96,7 @@ div.text > .method{
 }
 .method .row{
   position: absolute;
+  left: 0px;
   top: 0;
 }
 .method .icon{
@@ -138,28 +141,59 @@ div.rock_content{
   display: flex;
   flex-direction: row-reverse;
 }
-div.rock_content > div.text > .valley_content{
+div.rock_content div.text{
+  margin: 47px 20px 0px 20px;
+}
+div.rock p.content_text{
   font-size: 18px;
   width: 450px;
-  height: 175px;
+  height: 155px;
 }
-div.text{
-  margin: 47px 20px 0px 0px;
+/* ---------------佛手洞 -----------*/
+div.hole{
+  margin: 120px 0px 120px 0px;
+  border-radius: 20px;
+  width: 900px;
+  height: 450px;
+  background-color: hsla(160deg, 52%, 40%, 15%);
+  position: relative;
+  right: 0;
+  align-self: flex-end;
+  display: flex;
 }
-
-/* 猜你也想去 */
+div.hole_play{
+  margin: 47px 0px 0px 0px;
+  overflow: hidden;
+  width: 530px;
+}
+div.hole_content{
+  display: flex;
+  margin-left: -140px;
+}
+div.hole_content div.text{
+  margin: 47px 20px 0px 20px;
+}
+div.hole p.content_text{
+  font-size: 18px;
+  width: 450px;
+  height: 135px;
+}
+/* ----------------猜你也想去---------- */
+div.guess{
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
 div.guess > p{
   font-size: 30px;
-  margin-left: 507px;
 }
 div.column{
   width: 900px;
   column-count: 3;
-  margin-left: 150px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 0 auto;
   column-gap: 35px;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 div.column > a{
@@ -229,10 +263,10 @@ a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,
     height: 300px;
     position: relative;
   }
-  
   p.sol{
     width: 340px;
     margin: 80px auto;
+    margin-bottom: 150px;
     font-size: 20px;
     text-align:justify;
     color: hsla(0deg, 2%, 33%, 100);
@@ -261,7 +295,174 @@ a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,
     width: 100%;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
+  /* -----------------忘憂谷------------------ */
+  div.valley{
+    border-radius: 20px;
+    width: 100%;
+    height: 770px;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+  }
+  div.valley_play{
+    width: 95%;
+    height: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* margin-left: 1%; */
+    margin-bottom: 30px;
+  }
+  div.valley_content{
+    margin-left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    /* transform: translateX(-140px); */
+  }
+  p.content_title{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 30px;
+    color: hsla(0deg, 2%, 33%, 100);
+    margin-bottom: 30px;
+  }
+  p.content_text{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    height: fit-content;
+    padding: 0px 20px 0px 20px;
+  }
+  div.text{
+    margin: 0px 0px 0px 0px;
+  }
+  div.text > .method{
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative
+  }
+  .method .row{
+    width: 90%;
+    position: absolute;
+    left: 3%;
+    top: 0;
+  }
+  .method .icon{
+    margin-top: 10px;
+  }
+  .method p{
+    font-size: 18px;
+  }
+  .method p.position{
+    position: absolute;
+    top: 7px;
+    left: 45px;
+  }
+  .method p.bus{
+    position: absolute;
+    top: 41px;
+    left: 45px;
+  }
+  .method p.park{
+    position: absolute;
+    top: 76px;
+    left: 45px;
+  }
+  /* ---------------------老鷹岩 ---------------------*/
+  div.valley{
+    border-radius: 20px;
+    width: 100%;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+  }
+  div.valley_play{
+    width: 95%;
+    /* height: 66vw; */
+    margin: 0 auto;
+    overflow: hidden;
+    /* margin-left: 1%; */
+    margin-bottom: 30px;
+    position: relative;
+  }
+  div.valley_play:before{
+    content:"";
+    padding-bottom:66.6666666666%;
+    display: block;
+    width: 100%;
+  }
+  .slides{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+  div.valley_content{
+    margin-left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    /* transform: translateX(-140px); */
+  }
+  p.content_title{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 30px;
+    color: hsla(0deg, 2%, 33%, 100);
+    margin-bottom: 30px;
+  }
+  p.content_text{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    height: fit-content;
+    padding: 0px 20px 0px 20px;
+  }
+  div.text{
+    margin: 0px 0px 0px 0px;
+  }
+  div.text > .method{
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative
+  }
+  .method .row{
+    width: 90%;
+    position: absolute;
+    left: 3%;
+    top: 0;
+  }
+  .method .icon{
+    margin-top: 10px;
+  }
+  .method p{
+    font-size: 18px;
+  }
+  .method p.position{
+    position: absolute;
+    top: 7px;
+    left: 45px;
+  }
+  .method p.bus{
+    position: absolute;
+    top: 41px;
+    left: 45px;
+  }
+  .method p.park{
+    position: absolute;
+    top: 76px;
+    left: 45px;
+  }
+
 }
 @media (min-width:576px) and (max-width: 767.98px){
  
