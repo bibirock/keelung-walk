@@ -16,6 +16,7 @@
   </head>
   <body>
       <nav class="navbar">
+        <div class="light"></div>
         <aside class="aside">
           <img class="x" src="../x.svg">
           <div class="background"></div>
@@ -163,33 +164,20 @@
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      $(function(){
-
-      // 點擊
-      $("div.img").on("click", function(){
+      $(function () {
+        // 點擊
+        $("img.menu").on("click", function () {
         // -open 的樣式切換
-      $("aside").toggleClass("-open");
+        $("aside").toggleClass("-open"), $("div.light").toggleClass("-on");
         });
       });
-      $(function(){
-
-      // 點擊
-      $("img.x").on("click", function(){
-          // -open 的樣式切換
-      $("aside").removeClass("-open");
-          });
+      $(function () {
+        // 點擊
+        $("img.x").on("click", function () {
+        // -open 的樣式切換
+        $("aside").removeClass("-open"), $("div.light").removeClass("-on");
+        });
       });
-    </script>
-    <!-- <script src="../vendors/JQuery/JQueryCDN.js"></script>
-    <script src="../../js/slick-1.8.1/slick/slick.js"></script>
-    <script>
-      $('.product_1').slick({
-          dots: true,
-          infinite: true,
-          speed: 500,
-          fade: true,
-          cssEase: 'linear'
-        }); -->
     </script>
   </body>
 </html>

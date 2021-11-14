@@ -205,7 +205,30 @@
   border-radius: 15px;
   transition: .5s transform ease-in-out;
 }
-
+@media screen and (max-width: 575.98px){
+  .rock_play ul.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .rock_play li.slide {
+    margin: 0 auto;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: .5s transform ease-in-out;
+  }
+}
 .rock_play .slide:nth-of-type(1) {
   background-image: url("./images/rock/rock.jpg");
   background-size: cover;
@@ -363,7 +386,30 @@
   border-radius: 15px;
   transition: .5s transform ease-in-out;
 }
-
+@media screen and (max-width: 575.98px){
+  .hole_play ul.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .hole_play li.slide {
+    margin: 0 auto;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: .5s transform ease-in-out;
+  }
+}
 .hole_play .slide:nth-of-type(1) {
   background-image: url("./images/hole/hole.jpeg");
   background-size: cover;

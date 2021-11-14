@@ -88,6 +88,7 @@ main {
   min-width: 1200px;
   background-color: hsla(193deg, 100%, 96%, 100);
   margin: 0 auto;
+  overflow: hidden;
 }
 
 main.main div.scroll {
@@ -180,9 +181,9 @@ img.row {
   bottom: 0;
 }
 .flex{
-  width: 100%;
+  width: 1050px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 /* -----------------海口味---------------- */
 article.content_2 {
@@ -314,7 +315,7 @@ div.control{
   width: 180px;
   position: relative;
   left: 150px;
-  top: 290px;
+  top: 285px;
 }
 div.control > img#left {
   position: absolute;

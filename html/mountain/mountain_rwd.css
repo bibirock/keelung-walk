@@ -1,19 +1,20 @@
 @import url(../aside.css);
 @import url(../navbar.css);
 @import url(./mountain_play.css);
-*{
+* {
   box-sizing: border-box;
   margin: 0;
-  text-decoration:none;
+  text-decoration: none;
   color: hsla(0deg, 2%, 33%, 100);
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
 }
 
-body{
+body {
   background-color: hsla(193deg, 100%, 96%, 100);
 }
 
-div.banner{
+
+div.banner {
   margin: 0 auto;
   background-image: url("./images/banner.png");
   background-repeat: no-repeat;
@@ -24,27 +25,15 @@ div.banner{
   position: relative;
 }
 
-p.sol{
-  width: 1200px;
+p.sol {
+  max-width: 1200px;
   margin: 100px auto;
   text-align: center;
   font-size: 24px;
   color: hsla(0deg, 2%, 33%, 100);
 }
-div.bread{
-  width: 100%;
-  min-width: 1200px;
-  background-color: hsla(160deg, 52%, 40%, 15%);
-  height: 30px;
-}
-div.bread a{
-  line-height: 30px;
-}
-div.bread a:first-child{
-  padding-left: 80px;
-}
 
-main.main{
+main.main {
   display: flex;
   flex-direction: column;
   background-color: hsla(193deg, 100%, 96%, 100);
@@ -53,10 +42,10 @@ main.main{
   min-width: 1024;
   margin: 0 auto;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 /*----------------------- 忘憂谷 -----------------------*/
-div.valley{
+div.valley {
   border-radius: 20px;
   width: 900px;
   height: 450px;
@@ -66,62 +55,62 @@ div.valley{
   align-self: flex-end;
   display: flex;
 }
-div.valley_play{
+div.valley_play {
   margin: 47px 20px 0px 0px;
   overflow: hidden;
   width: 530px;
 }
-div.valley_content{
+div.valley_content {
   margin-left: -120px;
   display: flex;
   /* transform: translateX(-140px); */
 }
-p.content_title{
+p.content_title {
   margin-bottom: 30px;
   text-align: center;
   font-size: 36px;
   color: hsla(0deg, 2%, 33%, 100);
 }
-p.content_text{
+p.content_text {
   font-size: 18px;
   width: 450px;
   height: 175px;
 }
-div.text{
+div.text {
   margin: 47px 20px 20px 0px;
 }
-div.text > .method{
+div.text > .method {
   width: 100%;
-  position: relative
+  position: relative;
 }
-.method .row{
+.method .row {
   position: absolute;
   left: 0px;
   top: 0;
 }
-.method .icon{
+.method .icon {
   margin-top: 10px;
 }
-.method p{
+.method p {
   font-size: 18px;
 }
-.method p.position{
+.method p.position {
   position: absolute;
   top: 7px;
   left: 25px;
 }
-.method p.bus{
+.method p.bus {
   position: absolute;
   top: 41px;
   left: 25px;
 }
-.method p.park{
+.method p.park {
   position: absolute;
   top: 76px;
   left: 25px;
 }
 /* -------------------老鷹岩 ------------*/
-div.rock{
+div.rock {
   margin-top: 120px;
   border-radius: 20px;
   width: 900px;
@@ -132,25 +121,25 @@ div.rock{
   align-self: flex-start;
   display: flex;
 }
-div.rock_play{
+div.rock_play {
   margin: 47px 20px 0px 0px;
   overflow: hidden;
   width: 530px;
 }
-div.rock_content{
+div.rock_content {
   display: flex;
   flex-direction: row-reverse;
 }
-div.rock_content div.text{
+div.rock_content div.text {
   margin: 47px 20px 0px 20px;
 }
-div.rock p.content_text{
+div.rock p.content_text {
   font-size: 18px;
   width: 450px;
   height: 155px;
 }
 /* ---------------佛手洞 -----------*/
-div.hole{
+div.hole {
   margin: 120px 0px 120px 0px;
   border-radius: 20px;
   width: 900px;
@@ -161,33 +150,33 @@ div.hole{
   align-self: flex-end;
   display: flex;
 }
-div.hole_play{
+div.hole_play {
   margin: 47px 0px 0px 0px;
   overflow: hidden;
   width: 530px;
 }
-div.hole_content{
+div.hole_content {
   display: flex;
   margin-left: -140px;
 }
-div.hole_content div.text{
+div.hole_content div.text {
   margin: 47px 20px 0px 20px;
 }
-div.hole p.content_text{
+div.hole p.content_text {
   font-size: 18px;
   width: 450px;
   height: 135px;
 }
 /* ----------------猜你也想去---------- */
-div.guess{
+div.guess {
   width: fit-content;
   margin: 0 auto;
   padding-bottom: 120px;
 }
-div.guess > p{
+div.guess > p {
   font-size: 30px;
 }
-div.column{
+div.column {
   width: 900px;
   column-count: 3;
   margin: 0 auto;
@@ -196,43 +185,43 @@ div.column{
   margin-bottom: 100px;
 }
 
-div.column > a{
+div.column > a {
   display: block;
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-div.column a:hover{
+div.column a:hover {
   transform: scaleX(1.01);
 }
-img.top_gap{
+img.top_gap {
   margin-top: 135px;
 }
 
-div.column > img{
+div.column > img {
   column-gap: 35px;
   margin: 0;
   padding: 35px;
 }
 
-img.top_gap{
+img.top_gap {
   margin-top: 37px;
 }
 
-div.column > a.bottom_gap{
+div.column > a.bottom_gap {
   display: block;
   margin-bottom: 0;
   height: 274px;
   font-size: 0;
 }
 
-div.column > a{
+div.column > a {
   font-size: 0;
 }
 
-.notes{
+.notes {
   font-size: 26px;
   color: white;
   width: 274px;
@@ -244,17 +233,22 @@ div.column > a{
   transition: 0.3s;
   border-radius: 5px;
 }
-a.go1:hover div{
-  backdrop-filter: blur(3px); 
+a.go1:hover div {
+  backdrop-filter: blur(3px);
   transform: translateY(-100%);
 }
 
-a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,a.bottom_gap:hover div{
-  backdrop-filter: blur(3px); 
+a.go2:hover div,
+a.go3:hover div,
+a.go4:hover div,
+a.go5:hover div,
+a.go6:hover div,
+a.bottom_gap:hover div {
+  backdrop-filter: blur(3px);
   transform: translateY(-100%);
 }
-@media screen and (max-width: 575.98px){
-  div.banner{
+@media screen and (max-width: 575.98px) {
+  div.banner {
     margin: 0 auto;
     background-image: url("./images/banner.png");
     background-repeat: no-repeat;
@@ -263,34 +257,33 @@ a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,
     height: 300px;
     position: relative;
   }
-  p.sol{
+  p.sol {
     width: 340px;
     margin: 80px auto;
     margin-bottom: 150px;
     font-size: 20px;
-    text-align:justify;
+    text-align: justify;
     color: hsla(0deg, 2%, 33%, 100);
   }
-  div.bread{
+  div.bread {
     width: 100%;
     min-width: 100%;
     margin: 0 auto;
     background-color: hsla(160deg, 52%, 40%, 15%);
     height: 30px;
   }
-  div.center{
+  div.center {
     width: fit-content;
     margin: 0 auto;
   }
-  div.bread a{
+  div.bread a {
     line-height: 30px;
   }
-  div.bread a:first-child{
+  div.bread a:first-child {
     padding-left: 0px;
     text-align: center;
   }
-  main.main{
-    border: 1px solid black;
+  main.main {
     background-color: hsla(193deg, 100%, 96%, 100);
     width: 100%;
     margin: 0 auto;
@@ -298,178 +291,460 @@ a.go2:hover div,a.go3:hover div,a.go4:hover div,a.go5:hover div,a.go6:hover div,
     overflow: hidden;
   }
   /* -----------------忘憂谷------------------ */
-  div.valley{
+  div.valley {
     border-radius: 20px;
     width: 100%;
-    height: 770px;
+    height: inherit;
     background-color: hsla(160deg, 52%, 40%, 15%);
     display: flex;
     margin: 0 auto;
-    margin-bottom: 1000px;
+    margin-bottom: 120px;
   }
-  div.valley_play{
+  div.valley_play {
     width: 95%;
-    height: 280px;
+    /* height: 66vw; */
     margin: 0 auto;
     overflow: hidden;
-    /* margin-left: 1%; */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    position: relative;
   }
-  div.valley_content{
+  div.valley_play:before {
+    content: "";
+    padding-bottom: 66.6666666666%;
+    display: block;
+    width: 100%;
+  }
+  .slides {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+  div.valley_content {
     margin-left: 0;
     margin: 0 auto;
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: -30px;
     /* transform: translateX(-140px); */
   }
-  p.content_title{
+  p.content_title {
     width: fit-content;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 28px;
     color: hsla(0deg, 2%, 33%, 100);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
-  p.content_text{
+  p.content_text {
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
     height: fit-content;
     padding: 0px 20px 0px 20px;
   }
-  div.text{
+  div.text {
     margin: 0px 0px 0px 0px;
   }
-  div.text > .method{
+  div.text > .method {
     padding-left: 20px;
     margin-top: 10px;
     width: 100%;
-    position: relative
+    position: relative;
   }
-  .method .row{
+  .method .row {
     width: 90%;
     position: absolute;
     left: 3%;
     top: 0;
   }
-  .method .icon{
+  .method .icon {
     margin-top: 10px;
   }
-  .method p{
+  .method p {
     font-size: 18px;
   }
-  .method p.position{
+  .method p.position {
     position: absolute;
     top: 7px;
     left: 45px;
   }
-  .method p.bus{
+  .method p.bus {
     position: absolute;
     top: 41px;
     left: 45px;
   }
-  .method p.park{
+  .method p.park {
     position: absolute;
     top: 76px;
     left: 45px;
   }
   /* ---------------------老鷹岩 ---------------------*/
-  div.valley{
+  div.rock {
     border-radius: 20px;
     width: 100%;
+    height: inherit;
     background-color: hsla(160deg, 52%, 40%, 15%);
     display: flex;
     margin: 0 auto;
-    margin-bottom: 1000px;
+    margin-bottom: 120px;
   }
-  div.valley_play{
+  div.rock_play {
     width: 95%;
-    /* height: 66vw; */
+    height: 66vw;
     margin: 0 auto;
     overflow: hidden;
-    /* margin-left: 1%; */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
   }
-  div.valley_play:before{
-    content:"";
-    padding-bottom:66.6666666666%;
+  div.rock_play:before {
+    content: "";
+    padding-bottom: 66.6666666666%;
     display: block;
     width: 100%;
   }
-  .slides{
+  div.rock_content {
+    margin-left: 1px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -30px;
+  }
+  div.rock p.content_text {
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+  }
+  div.rock_content div.text {
+    margin: 0px 0px 0px 0px;
+  }
+  /* ----------------佛手洞------------------- */
+  div.hole {
+    border-radius: 20px;
+    width: 100%;
+    height: inherit;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 120px;
+  }
+  div.hole_play {
+    width: 95%;
+    height: 66vw;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  div.hole_play:before {
+    content: "";
+    padding-bottom: 66.6666666666%;
+    display: block;
+    width: 100%;
+  }
+  div.hole_content {
+    margin-left: 1px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -30px;
+  }
+  div.hole p.content_text {
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+  }
+  div.hole_content div.text {
+    margin: 0px 0px 0px 0px;
+  }
+  /* -------------猜你也想去---------------- */
+  div.guess {
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  div.guess > p {
+    font-size: 28px;
+  }
+  div.column {
+    width: fit-content;
+    column-count: 1;
+    margin: 0 auto;
+    column-gap: 35px;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  img.top_gap {
+    margin-top: 0px;
+  }
+  .column a:nth-child(3),.column a:nth-child(5){
+    display: none;
+  }
+  .notes {
+    font-size: 26px;
+    color: white;
+    width: 274px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(3px);;
+  }
+  a.go1 div {
+    -webkit-backdrop-filter: blur(3px);;
+    transform: translateY(0);
+  }
+  
+  a.go2 div,
+  a.go3 div,
+  a.go4 div,
+  a.go5 div,
+  a.go6 div{
+    backdrop-filter: blur(3px);
+    transform: translateY(0);
+  }
+  a.bottom_gap div {
+    backdrop-filter: blur(3px);
+    transform: translateY(-7px);
+  }
+  a.go1:hover div {
+    backdrop-filter: blur(3px);
+    transform: translateY(0);
+  }
+  
+  a.go2:hover div,
+  a.go3:hover div,
+  a.go4:hover div,
+  a.go5:hover div,
+  a.go6:hover div,
+  a.bottom_gap:hover div {
+    backdrop-filter: blur(3px);
+    transform: translateY(0);
+  }
+  
+}
+@media (min-width: 576px) and (max-width: 1024.98px) {
+  div.banner {
+    margin: 0 auto;
+    background-image: url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 350px;
+    position: relative;
+  }
+  p.sol {
+    width: 80%;
+    margin: 80px auto;
+    margin-bottom: 150px;
+    font-size: 20px;
+    text-align: justify;
+    color: hsla(0deg, 2%, 33%, 100);
+  }
+  div.bread {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    height: 30px;
+  }
+  div.center {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  div.bread a {
+    line-height: 30px;
+  }
+  div.bread a:first-child {
+    padding-left: 0px;
+    text-align: center;
+  }
+  div.valley {
+    border-radius: 20px;
+    max-width: 75%;
+    min-width: 580px;
+    height: inherit;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+  div.valley_play {
+    width: 530px;
+    /* height: 66vw; */
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  div.valley_play:before {
+    content: "";
+    padding-bottom: 66.6666666666%;
+    display: block;
+    width: 100%;
+  }
+  .slides {
     position: absolute !important;
     top: 0;
     left: 0;
   }
-  div.valley_content{
+  div.valley_content {
     margin-left: 0;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    /* transform: translateX(-140px); */
+    display: block;
+    margin-top: -60px;
   }
-  p.content_title{
+  p.content_title {
     width: fit-content;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 28px;
     color: hsla(0deg, 2%, 33%, 100);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
-  p.content_text{
+  p.content_text {
     width: 100%;
     margin: 0 auto;
     font-size: 18px;
     height: fit-content;
     padding: 0px 20px 0px 20px;
   }
-  div.text{
+  div.text {
     margin: 0px 0px 0px 0px;
   }
-  div.text > .method{
+  div.text > .method {
     padding-left: 20px;
     margin-top: 10px;
     width: 100%;
-    position: relative
+    position: relative;
   }
-  .method .row{
+  .method .row {
     width: 90%;
     position: absolute;
     left: 3%;
     top: 0;
   }
-  .method .icon{
+  .method .icon {
     margin-top: 10px;
   }
-  .method p{
+  .method p {
     font-size: 18px;
   }
-  .method p.position{
+  .method p.position {
     position: absolute;
     top: 7px;
     left: 45px;
   }
-  .method p.bus{
+  .method p.bus {
     position: absolute;
     top: 41px;
     left: 45px;
   }
-  .method p.park{
+  .method p.park {
     position: absolute;
     top: 76px;
     left: 45px;
   }
-
-}
-@media (min-width:576px) and (max-width: 767.98px){
- 
-}
-@media (min-width:768px) and (max-width: 991.98px){
-  
-}
-@media (min-width:992px) and (max-width: 1199.98px){
-
+  /* ---------------------老鷹岩 ---------------------*/
+  div.rock {
+    border-radius: 20px;
+    max-width: 75%;
+    min-width: 580px;
+    height: inherit;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+  div.rock_play {
+    width: 530px;
+    /* height: 66vw; */
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  div.rock_play:before {
+    content: "";
+    padding-bottom: 66.6666666666%;
+    display: block;
+    width: 100%;
+  }
+  div.rock_content {
+    margin-left: 1px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -60px;
+  }
+  div.rock p.content_text {
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+  }
+  div.rock_content div.text {
+    margin: 0px 0px 0px 0px;
+  }
+  /* ----------------佛手洞------------------- */
+  div.hole {
+    border-radius: 20px;
+    max-width: 75%;
+    min-width: 580px;
+    height: inherit;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+  div.hole_play {
+    width: 530px;
+    /* height: 66vw; */
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  div.hole_play:before {
+    content: "";
+    padding-bottom: 66.6666666666%;
+    display: block;
+    width: 100%;
+  }
+  div.hole_content {
+    margin-left: 1px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -60px;
+  }
+  div.hole p.content_text {
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+  }
+  div.hole_content div.text {
+    margin: 0px 0px 0px 0px;
+  }
+  /* -------------猜你也想去---------------- */
+  div.guess {
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  div.guess > p {
+    font-size: 28px;
+  }
+  div.column {
+    width: fit-content;
+    column-count: 2;
+    margin: 0 auto;
+    column-gap: 30px;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  img.top_gap {
+    margin-top: 0px;
+  }
+  .column a:nth-child(3),.column a:nth-child(5),.column a:nth-child(4){
+    display: none;
+  }
 }

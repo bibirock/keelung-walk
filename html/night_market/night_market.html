@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>廟口特輯</title>
     <link href="./night_market.css" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./images/icon/title_icon.ico" type="image/x-icon"/>
   </head>
   <body>
       <nav class="navbar">
+        <div class="light"></div>
         <aside class="aside">
           <img class="x" src="../x.svg">
           <div class="background"></div>
@@ -85,28 +82,32 @@
         <p>廟口特輯</p>
       </div>
       <div class="bread">
-        <a href="../index/index.html">首頁</a > / <a href="#"a>主題景點</a> / <span>幽遊山徑</span>
+        <div class="center">
+          <a href="../index/index.html">首頁</a > / <a href="#"a>小吃攻略</a> / <span>廟口特輯</span>
+        </div>
       </div>
       <main>
         <section class="info">
           <img class="info" src="./images/info_top.png">
-          <p class="title">廟口小吃</p>
-          <p class="content">
-            台灣各地有歷史的鄉土小吃區，大都伴隨位於市集、香火鼎盛的廟宇而產生，稱為廟口小吃。基隆奠濟宮的廟口小吃，更因有口皆碑，引來的食客多於香客，形成以美食取勝的的觀光區。
-          </p>
+          <div class="content" data-aos="fade-up">
+            <p class="title" >廟口小吃</p>
+            <p class="content">
+              台灣各地有歷史的鄉土小吃區，大都伴隨位於市集、香火鼎盛的廟宇而產生，稱為廟口小吃。基隆奠濟宮的廟口小吃，更因有口皆碑，引來的食客多於香客，形成以美食取勝的的觀光區。
+            </p>
+          </div>
         </section>
-        <div class="background">
-          <article class="food_1">
-            <div class="food">
-              <div class="img"><img src="./images/img_1_1.png"></div>
+        <div class="background" >
+          <article class="food_1" >
+            <div class="food" data-aos="fade-up">
+              <div class="img_1"><img src="./images/img_1_1.png"></div>
               <div class="text">
                 <p class="title"><span class="background">羊妹妹羊肉魯肉飯</span></p>
                 <p class="info">地址：基隆市仁愛區仁三路27之1號<br>電話：(02) 2424-6781</p>
-                <p class="time">營業時間：11:00-23:45（周一至周五、周日）；<br>11:00-01:00（周六</p>
+                <p class="time">營業時間：11:00-23:45（周一至周六日休)</p>
               </div>
             </div>
           </article>
-          <article class="food_1_1">
+          <article class="food_1_1" data-aos="fade-right">
             <div class="food">
               <div class="text">
                 <p class="title">羊肉魯肉飯</p>
@@ -117,7 +118,7 @@
               </div>
             </div>
           </article>
-          <article class="food_1_2">
+          <article class="food_1_2" data-aos="fade-left">
             <div class="food">
               <div class="img">
                 <img src="./images/img_1_3.png">
@@ -131,9 +132,9 @@
           </article>
         </div>  
         <!-- 鼎邊銼 ----------------------------->
-        <article class="food_2">
+        <article class="food_2" data-aos="fade-up">
           <div class="food">
-            <div class="img"><img src="./images/img_2_1.png"></div>
+            <div class="img_1"><img src="./images/img_2_1.png"></div>
             <div class="text">
               
               <p class="title"><span class="background">邢記鼎邊趖</span></p>
@@ -142,7 +143,7 @@
             </div>
           </div>
         </article>
-        <article class="food_1_1">
+        <article class="food_1_1" data-aos="fade-right">
           <div class="food">
             <div class="text">
               <p class="title">招牌鼎邊銼</p>
@@ -153,7 +154,7 @@
             </div>
           </div>
         </article>
-        <article class="food_1_2">
+        <article class="food_1_2" data-aos="fade-left">
           <div class="food">
             <div class="img">
               <img src="./images/img_2_3.png">
@@ -166,9 +167,9 @@
         </article>
         <!-- 甜不辣 ----------------------------->
         <div class="background_2">
-          <article class="food_3">
+          <article class="food_3" data-aos="fade-up">
             <div class="food">
-              <div class="img"><img src="./images/img_3_1.png"></div>
+              <div class="img_1"><img src="./images/img_3_1.png"></div>
               <div class="text">
                 <p class="title"><span class="background">王記天婦羅</span></p>
                 <p class="info">地址：基隆市仁愛區仁三路16號<br>電話：0937-673-445</p>
@@ -176,7 +177,7 @@
               </div>
             </div>
           </article>
-          <article class="food_1_1">
+          <article class="food_1_1" data-aos="fade-right">
             <div class="food">
               <div class="text">
                 <p class="title">天婦羅</p>
@@ -187,7 +188,7 @@
               </div>
             </div>
           </article>
-          <article class="food_1_2_1">
+          <article class="food_1_2_1" data-aos="fade-left">
             <div class="food">
               <div class="img">
                 <img src="./images/img_3_3.png">
@@ -228,22 +229,24 @@
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      $(function(){
-
-      // 點擊
-      $("div.img").on("click", function(){
+      $(function () {
+        // 點擊
+        $("img.menu").on("click", function () {
         // -open 的樣式切換
-      $("aside").toggleClass("-open");
+        $("aside").toggleClass("-open"), $("div.light").toggleClass("-on");
         });
       });
-      $(function(){
-
-      // 點擊
-      $("img.x").on("click", function(){
-          // -open 的樣式切換
-      $("aside").removeClass("-open");
-          });
+      $(function () {
+        // 點擊
+        $("img.x").on("click", function () {
+        // -open 的樣式切換
+        $("aside").removeClass("-open"), $("div.light").delay(1000).removeClass("-on");
+        });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

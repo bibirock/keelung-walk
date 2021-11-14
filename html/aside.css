@@ -30,7 +30,6 @@ aside.aside{
   transform: translateX(110%);
   transition: transform 1s ease-in-out;
 }
-
 aside.-open{
   background-color: hsla(193deg, 63%, 88%, 100);
   width: 500px;
@@ -42,7 +41,29 @@ aside.-open{
   z-index: 8;
   /* box-shadow: -1px 1px 10px lightgrey ; */
   transform: translateX(0%);
- 
+}
+div.light{
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  left: -100vw;
+  background-color: black;
+  opacity: 0.5;
+  transition: 1s;
+  z-index: 8;
+} 
+div.-on{
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  transition: 1.35s;
+  transition-delay: 0.25s;
+  z-index: 8;
 }
 aside > ul{
   width: 500px;
@@ -220,8 +241,7 @@ ul.travel :hover span::before{
     top: 0;
     overflow: hidden;
     z-index: 8;
-    /* box-shadow: 10px 10px 5px black ; */
-    transform: translateX(110%);
+    transform: translateX(100%);
     transition: transform 1s ease-in-out;
   }
   
@@ -234,7 +254,7 @@ ul.travel :hover span::before{
     top: 0;
     overflow: hidden;
     z-index: 8;
-    /* box-shadow: -1px 1px 10px lightgrey ; */
+    box-shadow: 3px 3px 5px black ;
     transform: translateX(0%);
    
   }
@@ -242,7 +262,7 @@ ul.travel :hover span::before{
     width: 100vw;
     height: 100vh;
     position: absolute;
-    right: 0;
+    right: 1%;
     top: 0;
     z-index: 3;
     overflow: hidden;

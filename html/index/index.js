@@ -1,18 +1,19 @@
+
+// 側邊欄點擊
 $(function () {
   // 點擊
   $("div.img").on("click", function () {
     // -open 的樣式切換
-    $("aside").toggleClass("-open");
+    $("aside").toggleClass("-open"), $("div.light").toggleClass("-on");
   });
 });
 $(function () {
   // 點擊
   $("img.x").on("click", function () {
     // -open 的樣式切換
-    $("aside").removeClass("-open");
+    $("aside").removeClass("-open"), $("div.light").removeClass("-on");
   });
 });
-
 // var header_active = function () {
 //   // 取得使用者滑了多少 px
 //   var scroll_top = $(window).scrollTop();
@@ -40,44 +41,42 @@ let img_block = document.getElementsByClassName("images")[0]; //圖片區域
 let text_input = document.getElementsByClassName("background")[0]; //置換文字的地方
 let click = 0;
 //左邊按紐的點擊
-let left_botton = document.getElementById("left"); 
-let image = [`<a href="../mountain/mountain.html"><img src="./images/vector/the2.png"></a>
+let left_botton = document.getElementById("left");
+let image = [
+  `<a href="../mountain/mountain.html"><img src="./images/vector/the2.png"></a>
 <a href="../mountain/mountain.html"><img class="down" src="./images/vector/the1.png"></a>
-<a href="../mountain/mountain.html"><img src="./images/vector/the3.png"></a>`]
+<a href="../mountain/mountain.html"><img src="./images/vector/the3.png"></a>`,
+];
 
 left_botton.addEventListener("click", function () {
-  
-  
-  if ((click == 0)) {
-    let changeStr =
-      '無敵海景';
+  if (click == 0) {
+    let changeStr = "無敵海景";
     theme_text.innerHTML = changeStr;
-    click = 1
-    
-  //   let changerImg = 
-  //   `
-  //   <a href="../mountain/mountain.html"><img src="./images/vector/the2.png"></a>
-  //   <a href="../mountain/mountain.html"><img class="down" src="./images/vector/the1.png"></a>
-  //   <a href="../mountain/mountain.html"><img src="./images/vector/the3.png"></a>
-  // `
-  //   img_block.innerHTML = changerImg;
+    click = 1;
 
-  // }else if ((click == 1)) {
-  //   console.log("222")
-  //   let changeStr =
-  //     '<a id="theme" href="../mountain/mountain.html">打卡熱點</a>';
-  //   theme_text.innerHTML = changeStr;
+    //   let changerImg =
+    //   `
+    //   <a href="../mountain/mountain.html"><img src="./images/vector/the2.png"></a>
+    //   <a href="../mountain/mountain.html"><img class="down" src="./images/vector/the1.png"></a>
+    //   <a href="../mountain/mountain.html"><img src="./images/vector/the3.png"></a>
+    // `
+    //   img_block.innerHTML = changerImg;
+
+    // }else if ((click == 1)) {
+    //   console.log("222")
+    //   let changeStr =
+    //     '<a id="theme" href="../mountain/mountain.html">打卡熱點</a>';
+    //   theme_text.innerHTML = changeStr;
   }
 });
 //右邊按紐的點擊
 let right_botton = document.getElementById("right");
 right_botton.addEventListener("click", function () {
-  
   if ((this.click = 1)) {
     let changeStr =
       '<a id="theme" href="../mountain/mountain.html">幽遊山徑</a>';
     theme_text.innerHTML = changeStr;
-  }else if ((this.click = 2)) {
+  } else if ((this.click = 2)) {
     let changeStr =
       '<a id="theme" href="../mountain/mountain.html">打卡熱點</a>';
     theme_text.innerHTML = changeStr;
