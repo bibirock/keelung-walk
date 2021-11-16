@@ -24,14 +24,14 @@ main.main{
   background-color: hsla(193deg, 100%, 96%, 100);
 }
 
-main  section{
+main section{
   width: 690px;
   display: inline-block;
   vertical-align: top;
-  margin-left: 70px;
+  margin-left: calc(1050px - 900px);
 }
 div.fit{
-  width: fit-content;
+  width: 1200px;
   display: inline-block;
   height: fit-content;
 }
@@ -285,6 +285,7 @@ p.try{
   font-size: 30px;
   margin-top: 100px;
   text-align: center;
+
   margin-bottom: 80px;
 }
 
@@ -292,14 +293,13 @@ article{
   position: relative;
   width: 1200px;
   display: inline-block;
-  margin-bottom:  100px;
 }
 
 article > img.try_1{
   position: absolute;
   top: 0px;
   left: 260px;
-  z-index: 5;
+  z-index: 1;
 }
 
 article > img.try_2{
@@ -359,10 +359,9 @@ article.line{
   box-shadow:1px 1px 1px lightgray;
   width: 300px;
   height: 680px;
-  margin-left: 60px;
   display: inline-block;
   position: sticky;
-  top: 250px;
+  top: 150px;
   bottom: 0px;
 }
 

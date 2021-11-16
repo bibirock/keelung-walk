@@ -27,8 +27,8 @@ aside.aside{
   overflow: hidden;
   z-index: 8;
   /* box-shadow: 10px 10px 5px black ; */
-  transform: translateX(110%);
-  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
+  transition: transform 1s ;
 }
 aside.-open{
   background-color: hsla(193deg, 63%, 88%, 100);
@@ -46,23 +46,23 @@ div.light{
   width: 100vw;
   height: 100vh;
   display: block;
-  position: absolute;
-  left: -100vw;
+  position: fixed;
+  top: 0;
+  right: -100vw;
   background-color: black;
   opacity: 0.5;
-  transition: 1s;
+  transition: .9s;
   z-index: 8;
 } 
 div.-on{
   width: 100vw;
   height: 100vh;
   display: block;
-  position: absolute;
-  left: 0;
+  position: flex;
+  right: 0;
   background-color: black;
   opacity: 0.5;
-  transition: 1.35s;
-  transition-delay: 0.25s;
+  transition: 1s;
   z-index: 8;
 }
 aside > ul{

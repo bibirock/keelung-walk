@@ -1,11 +1,11 @@
 @import url(../navbar.css);
 @import url(../footer.css);
 @import url(../aside.css);
-body{
+body {
   background-color: hsla(193deg, 100%, 96%, 100);
 }
 
-div.banner{
+div.banner {
   margin: 0 auto;
   background-image: url("./images/banner.png");
   background-repeat: no-repeat;
@@ -15,45 +15,44 @@ div.banner{
   min-width: 1200px;
   height: 400px;
 }
-main.main{
+main.main {
   padding-top: 100px;
   width: 100%;
   min-width: 1200px;
   margin: 0 auto;
   position: relative;
   background-color: hsla(193deg, 100%, 96%, 100);
-  }
+}
 
-article.frist{
+article.frist {
   width: 1000px;
   margin: 0 auto;
   position: relative;
 }
-article.frist > img{
+article.frist > img {
   display: inline-block;
   vertical-align: bottom;
   position: relative;
   left: -70px;
-  
 }
-article.frist p{
+article.frist p {
   width: 422px;
   position: absolute;
   bottom: 0;
   left: 638px;
-  font-size: 24px
-  }
-  
-main > p.title{
+  font-size: 24px;
+}
+
+main > p.title {
   margin: 0 auto;
   padding-top: 120px;
   padding: 100px 0px 80px;
   width: 705px;
   font-size: 18px;
-  }
+}
 
-article.two div.background{
-  background-color: hsla(160deg, 52%, 40%, .15);
+article.two div.background {
+  background-color: hsla(160deg, 52%, 40%, 0.15);
   border-radius: 50%;
   width: 1080px;
   height: 1080px;
@@ -61,58 +60,58 @@ article.two div.background{
   padding-top: 216px;
   position: relative;
 }
-article.two p.one{
+article.two p.one {
   width: 488px;
   font-size: 18px;
   margin-left: 60px;
   padding-top: 93px;
 }
-article.two p.two{
+article.two p.two {
   width: 600px;
   position: absolute;
   left: 246px;
   top: 884px;
 }
-div.background img:nth-child(2){
+div.background img:nth-child(2) {
   margin: 35px 0px 0px 60px;
 }
-div.background img:nth-child(3){
+div.background img:nth-child(3) {
   position: absolute;
   left: 580px;
-  top: 216px
+  top: 216px;
 }
-div.background img:nth-child(4){
+div.background img:nth-child(4) {
   position: absolute;
   left: 580px;
   top: 561px;
 }
 /* ----------------------第三區------------------ */
-article.three{
+article.three {
   margin-top: 72px;
-  position: relative; 
+  position: relative;
   font-size: 0;
   z-index: 2;
 }
-div.middle{
+div.middle {
   z-index: 100;
   margin: 0 auto;
 }
-.block_3_1{
+.block_3_1 {
   margin-right: 50px;
   margin-bottom: 50px;
   z-index: 100;
 }
-article.three > img.back{
+article.three > img.back {
   position: absolute;
   left: 0;
   top: 168px;
 }
 
-article.three > img:nth-child(2){
+article.three > img:nth-child(2) {
   margin: 70px 0px 0px 50px;
 }
 
-article.three p{
+article.three p {
   font-size: 18px;
   width: 590px;
   margin: 0 auto;
@@ -120,48 +119,263 @@ article.three p{
 }
 
 /* ----------------------第四區------------------ */
-article.four{
+article.four {
   margin-top: 120px;
   position: relative;
   font-size: 0;
 }
-article.four img:nth-child(1){
+article.four img:nth-child(1) {
   margin: 0px 35px 0px 0px;
 }
 
-article.four p{
+article.four p {
   font-size: 18px;
 }
-article.four p.one{
+article.four p.one {
   width: fit-content;
   margin: 0 auto;
   padding: 80px 0px 120px 0px;
 }
 
-article.four img:nth-child(4){
+article.four img:nth-child(4) {
   display: inline-block;
   vertical-align: top;
   z-index: 10;
   margin: 0px 0px 120px 100px;
 }
 
-article.four p.two{
+article.four p.two {
   width: 376px;
   height: 76px;
   margin: 0 auto;
   display: inline-block;
 }
 
-article.four img.back{
+article.four img.back {
   position: absolute;
   right: 0;
   bottom: 120px;
 }
-div.middle_1{
+div.middle_1 {
   margin: 0 auto;
   z-index: 100;
 }
-#img{
+#img {
   vertical-align: middle;
   margin-bottom: 120px;
+}
+/* ---------------------RWD ------------------------*/
+@media screen and (max-width: 575.98px) {
+  div.banner {
+    margin: 0 auto;
+    background-image: url("./images/banner_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  p.sol {
+    width: 340px;
+    margin: 80px auto;
+    margin-bottom: 150px;
+    font-size: 20px;
+    text-align: justify;
+    color: hsla(0deg, 2%, 33%, 100);
+  }
+  div.bread {
+    width: 100% !important;
+    min-width: 0 !important;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    height: 30px;
+  }
+  div.center {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  div.bread a {
+    line-height: 30px;
+  }
+  div.bread a:first-child {
+    padding-left: 0px !important;
+    text-align: center;
+  }
+  main.main {
+    padding-top: 0;
+    width: 100%;
+    min-width: 0;
+    position: relative;
+    background-color: hsla(193deg, 100%, 96%, 100);
+  }
+  article.frist {
+    width: 100%;
+  }
+  article.frist > img {
+    display: block;
+    width: 100%;
+    padding-top: 120px;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  article.frist p {
+    width: 80%;
+    position: static;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+
+  main > p.title {
+    margin: 0 auto;
+    padding-top: 800px;
+    padding: 80px 20px 30px 20px;
+    width: 100%;
+    font-size: 18px;
+    /* display: none; */
+  }
+
+  article.two div.background {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 80px 0 80px 0;
+    position: relative;
+  }
+  article.two p.one {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0px;
+    padding: 20px 20px 50px 20px;
+    order: 2;
+  }
+  article.two p.two {
+    width: 100%;
+    position: static;
+    order: 5;
+    padding: 0px 20px 0px 20px;
+  }
+  div.background img:nth-child(2) {
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+    order: 4;
+  }
+  div.background img:nth-child(3) {
+    padding: 0 20px 0 20px;
+    position: static;
+    order: 1;
+  }
+  div.background img:nth-child(4) {
+    padding: 20px;
+    position: static;
+    order: 3;
+  }
+  /* ----------------------第三區------------------ */
+  article.three {
+    margin-top: 72px;
+    position: relative;
+    font-size: 0;
+    z-index: 2;
+  }
+  div.middle {
+    z-index: 100;
+    margin: 0 auto;
+  }
+  .block_3_1 {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    z-index: 100;
+  }
+  article.three > img.back {
+    position: absolute;
+    left: 0;
+    top: 168px;
+  }
+
+  article.three > img:nth-child(2) {
+    margin: 70px 0px 0px 50px;
+  }
+
+  article.three p {
+    font-size: 18px;
+    width: 590px;
+    margin: 0 auto;
+    padding-top: 55px;
+  }
+
+  /* ----------------------第四區------------------ */
+  article.four {
+    margin-top: 120px;
+    position: relative;
+    font-size: 0;
+  }
+  article.four img:nth-child(1) {
+    margin: 0px 35px 0px 0px;
+  }
+
+  article.four p {
+    font-size: 18px;
+  }
+  article.four p.one {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 80px 0px 120px 0px;
+  }
+
+  article.four img:nth-child(4) {
+    display: inline-block;
+    vertical-align: top;
+    z-index: 10;
+    margin: 0px 0px 120px 100px;
+  }
+
+  article.four p.two {
+    width: 376px;
+    height: 76px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  article.four img.back {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+  }
+  div.middle_1 {
+    margin: 0 auto;
+    z-index: 100;
+  }
+  #img {
+    vertical-align: middle;
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  div.my_div1 {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  div.my_div1 {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  div.my_div1 {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  div.my_div1 {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  div.my_div1 {
+    width: 1320px;
+  }
 }
