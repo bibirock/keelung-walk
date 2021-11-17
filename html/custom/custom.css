@@ -2,35 +2,35 @@
 @import url(../footer.css);
 @import url(../aside.css);
 
-*{
+* {
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
-body{
+body {
   background-color: hsla(193deg, 100%, 96%, 100);
 }
-div.banner{
+div.banner {
   margin: 0 auto;
-  background-image: url("./images/banner_2.jpg");
+  background-image: url("./images/banner_3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
+  position: relative;
   width: 100%;
   min-width: 1200px;
   height: 400px;
 }
-div.banner p{
+div.banner p {
   transform: translateX(-50px);
 }
 
-main{
-border: 1px solid hsla(193deg, 100%, 96%, 100);;
-background-color: hsla(193deg, 100%, 96%, 100);
-padding-top: 100px;
-width: 1200px;
-margin: 0 auto;
+main {
+  border: 1px solid hsla(193deg, 100%, 96%, 100);
+  background-color: hsla(193deg, 100%, 96%, 100);
+  padding-top: 100px;
+  width: 1200px;
+  margin: 0 auto;
 }
-p.sol{
+p.sol {
   width: 1200px;
   margin: 0 auto;
   padding-bottom: 100px;
@@ -38,31 +38,58 @@ p.sol{
   font-size: 24px;
   color: hsla(0deg, 2%, 33%, 100);
 }
-main{
+#phone{
+  display: none;
+}
+main {
   font-size: 0;
 }
-article.images{
+article.images {
   margin-left: 120px;
-  background-color: hsla(160deg, 52%, 40%, .19);
+  background-color: hsla(160deg, 52%, 40%, 0.19);
   border-radius: 15px;
   width: 600px;
   display: inline-block;
 }
-div.grid{
+div.grid {
   display: grid;
   font-size: 0px;
-  grid-template-columns: auto auto ;
-  padding: 20px 15px 20px ;
+  grid-template-columns: auto auto;
+  padding: 20px 15px 20px;
 }
-article.images  div.grid_item{
+article.images div.grid_item {
   width: fit-content;
   height: fit-content;
   font-size: 0;
   padding: 20px;
-  
+}
+div.content {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: url("https://alldata.sgp1.digitaloceanspaces.com/images/openhand.cur"),
+    default !important;
+}
+div.grid_item p {
+  font-size: 24px;
+  color: white;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding-top: 2px;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.5s;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+div.content:hover p {
+  transform: translateY(-50px);
 }
 /* ---------------------------右側選擇區----------------------- */
-article.goto{
+article.goto {
   vertical-align: top;
   width: 245px;
   display: inline-block;
@@ -70,12 +97,12 @@ article.goto{
   font-size: 24px;
 }
 
-article.goto img.vector{
+article.goto img.vector {
   width: 176px;
   transform: translateY(-50px) translateX(-80px);
 }
 
-article.goto  p{
+article.goto p {
   border-radius: 5px;
   width: 245px;
   height: 200px;
@@ -85,14 +112,14 @@ article.goto  p{
   margin-bottom: 60px;
   position: relative;
 }
-article.goto  p::after{
+article.goto p::after {
   cursor: pointer;
-  background-color: hsla(160deg, 52%, 40%, .19);
+  background-color: hsla(160deg, 52%, 40%, 0.19);
   background-image: url("./icon/reset.png");
   background-repeat: no-repeat;
   background-size: 35%;
   width: 70px;
-  content:"重選";
+  content: "重選";
   position: absolute;
   font-size: 18px;
   bottom: -30px;
@@ -100,16 +127,16 @@ article.goto  p::after{
   padding-right: 10px;
   text-align: right;
 }
-article.goto img.plus{
+article.goto img.plus {
   /* border: 1px solid blue; */
   margin: 0 0 60px 70px;
 }
 
 /* ------------------------------建議路程時間------------------ */
-article.next{
-  border-top: 1px solid hsla(160deg, 52%, 40%, .19);
-  border-bottom: 1px solid hsla(160deg, 52%, 40%, .19);
-  background-color: hsla(160deg, 52%, 40%, .19);
+article.next {
+  border-top: 1px solid hsla(160deg, 52%, 40%, 0.19);
+  border-bottom: 1px solid hsla(160deg, 52%, 40%, 0.19);
+  background-color: hsla(160deg, 52%, 40%, 0.19);
   border-radius: 5px;
   width: 960px;
   height: 580px;
@@ -118,43 +145,205 @@ article.next{
   margin-bottom: 100px;
 }
 
-article.next > div.background{
-  background-color: hsla(0deg, 0%, 100%, .75);
+article.next > div.background {
+  background-color: hsla(0deg, 0%, 100%, 0.75);
   height: 540px;
   margin-top: 19px;
   width: 960px;
-  
 }
 
-article.next p.time{
+article.next p.time {
   font-size: 30px;
   padding: 25px 0 25px 170px;
 }
 
-article.next div.map{
+article.next div.map {
   margin-left: 20px;
   display: inline-block;
   vertical-align: top;
 }
 
-div.suggest{
+div.suggest {
   display: inline-block;
   font-size: 18px;
   padding: 155px 88px 0 88px;
 }
-div.suggest > p.title{
+div.suggest > p.title {
   font-size: 30px;
 }
 
-div.suggest > button{
+div.suggest > button {
   background-color: hsla(47deg, 78%, 74%, 100);
   border-color: hsla(47deg, 78%, 74%, 100);
   border-radius: 5px;
-  border-width: 1px; 
+  border-width: 1px;
   font-size: 24px;
   width: 180px;
   height: 55px;
   margin-top: 115px;
   margin-left: 30px;
   cursor: pointer;
+}
+/* -----------------RWD -------------*/
+@media screen and (max-width: 575.98px) {
+  div.banner {
+    margin: 0 auto;
+    background-image: url("./images/min_banner_3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  p.sol {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    font-size: 20px;
+    text-align: justify;
+    color: hsla(0deg, 2%, 33%, 100);
+    padding: 0px 20px 80px 20px;
+  }
+  #phone{
+    display: block;
+  }
+  div.bread {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    height: 30px;
+  }
+  div.center {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  div.bread a {
+    line-height: 30px;
+  }
+  div.bread a:first-child {
+    padding-left: 0px !important;
+    text-align: center;
+  }
+  main.main {
+    background-color: hsla(193deg, 100%, 96%, 100);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  main p:first-child {
+    display: none;
+  }
+  article.goto {
+    display: none;
+  }
+  article.images {
+    margin-left: 0px;
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 15 px;
+    width: 100%;
+    display: inline-block;
+  }
+  div.grid {
+    display: grid;
+    font-size: 0px;
+    grid-template-columns: auto auto;
+    padding: 0;
+  }
+  div.grid img {
+    width: 100%;
+  }
+  article.next {
+    border-top: 1 px solid hsla(160deg, 52%, 40%, 0.19);
+    border-bottom: 1 px solid hsla(160deg, 52%, 40%, 0.19);
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 5 px;
+    width: 100%;
+    height: inherit;
+    margin-top: 100 px;
+    margin-bottom: 100 px;
+  }
+  article.next > div.background {
+    background-color: hsla(0deg, 0%, 100%, 0.75);
+    height: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  article.next div.map {
+    padding-top: 0px;
+    margin-left: 0px;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  div.suggest {
+    display: block;
+    font-size: 18px;
+    padding: 50px 0px 20px 0px !important;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  div.suggest > p.title {
+    font-size: 24px;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+  div.suggest > p {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 0px;
+  }
+  article.next p.time {
+    font-size: 24px;
+    padding: 10px 0 10px 0px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  div.suggest > button {
+    background-color: hsla(47deg, 78%, 74%, 100);
+    border-color: hsla(47deg, 78%, 74%, 100);
+    border-radius: 5 px;
+    border-width: 1 px;
+    font-size: 24px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    margin: 30px auto !important;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  div.grid_item p {
+    font-size: 14px;
+    color: white;
+    -webkit-backdrop-filter: blur(10px);
+    padding-top: 2px;
+    height: 25px;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+  }
+  div.content:hover p {
+    transform: translateY(0px);
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  div.my_div1 {
+    width: 960px;
+  }
 }

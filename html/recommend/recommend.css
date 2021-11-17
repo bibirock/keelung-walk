@@ -10,15 +10,13 @@ div.banner {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-width: 1200px;
   height: 400px;
   position: relative;
 }
 
 main.main {
-  padding-top: 100px;
-  /* border: 1px solid hsla(193deg, 100%, 96%, 1);  */
-  width: 1200px;
+  padding: 100px 20px 0px 20px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   background-color: hsla(193deg, 100%, 96%, 100);
@@ -35,15 +33,18 @@ main section {
   width: 690px;
   display: inline-block;
   vertical-align: top;
-  margin-left: calc(1050px - 900px);
+  margin-left: calc(90% - 900px);
 }
 div.fit {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: inline-block;
   height: fit-content;
 }
 /* 八斗子車站 */
-
+div.line {
+  display: none;
+}
 section div.station {
   /* margin-top: 100px; */
   box-shadow: 1px 1px 1px lightgray;
@@ -53,6 +54,16 @@ section div.station {
   height: 355px;
   position: relative;
   margin-bottom: 50px;
+}
+section div.station:last-child {
+  /* margin-top: 100px; */
+  box-shadow: 1px 1px 1px lightgray;
+  background-color: hsla(160deg, 52%, 40%, 0.19);
+  border-radius: 5px;
+  width: 700px;
+  height: 355px;
+  position: relative;
+  margin-bottom: 0px;
 }
 section div.background {
   background-color: hsla(0deg, 0%, 100%, 75%);
@@ -88,206 +99,7 @@ div.station p.content {
   top: 105px;
 }
 
-/* 鐵道自行車 */
-
-section div.bike {
-  box-shadow: 1px 1px 1px lightgray;
-  background-color: hsla(160deg, 52%, 40%, 0.19);
-  border-radius: 5px;
-  width: 700px;
-  height: 355px;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-div.bike img {
-  border-radius: 15px;
-  width: 305px;
-  height: 272px;
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  object-fit: cover;
-}
-
-div.bike p.title {
-  font-size: 24px;
-  position: absolute;
-  left: 345px;
-  top: 60px;
-}
-
-div.bike p.content {
-  font-size: 18px;
-  width: 325px;
-  height: 170px;
-  position: absolute;
-  right: 20px;
-  top: 105px;
-}
-
-/* 石頭火鍋 */
-
-section div.food {
-  box-shadow: 1px 1px 1px lightgray;
-  background-color: hsla(160deg, 52%, 40%, 0.19);
-  border-radius: 5px;
-  width: 700px;
-  height: 355px;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-div.food img {
-  border-radius: 15px;
-  width: 305px;
-  height: 272px;
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  object-fit: cover;
-}
-
-div.food p.title {
-  font-size: 24px;
-  position: absolute;
-  left: 345px;
-  top: 60px;
-}
-
-div.food p.content {
-  font-size: 18px;
-  width: 325px;
-  height: 170px;
-  position: absolute;
-  right: 20px;
-  top: 105px;
-}
-
-/* 海科館 */
-
-section div.mu {
-  box-shadow: 1px 1px 1px lightgray;
-  background-color: hsla(160deg, 52%, 40%, 0.19);
-  border-radius: 5px;
-  width: 700px;
-  height: 355px;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-div.mu img {
-  border-radius: 15px;
-  width: 305px;
-  height: 272px;
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  object-fit: cover;
-}
-
-div.mu p.title {
-  font-size: 24px;
-  position: absolute;
-  left: 345px;
-  top: 60px;
-}
-
-div.mu p.content {
-  font-size: 18px;
-  width: 325px;
-  height: 170px;
-  position: absolute;
-  right: 20px;
-  top: 105px;
-}
-
-/* 潮境公園 */
-
-section div.park {
-  box-shadow: 1px 1px 1px lightgray;
-  background-color: hsla(160deg, 52%, 40%, 0.19);
-  border-radius: 5px;
-  width: 700px;
-  height: 355px;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-div.park img {
-  border-radius: 15px;
-  width: 305px;
-  height: 272px;
-  position: absolute;
-  top: 30px;
-  left: 20px;
-  object-fit: cover;
-}
-
-div.park p.title {
-  font-size: 24px;
-  position: absolute;
-  left: 345px;
-  top: 60px;
-}
-
-div.park p.content {
-  font-size: 18px;
-  width: 325px;
-  height: 170px;
-  position: absolute;
-  right: 20px;
-  top: 105px;
-}
-
-/* 廟口夜市 */
-
-section div.night_mark {
-  box-shadow: 1px 1px 1px lightgray;
-  background-color: hsla(160deg, 52%, 40%, 0.19);
-  border-radius: 5px;
-  width: 700px;
-  height: 355px;
-  position: relative;
-  margin-bottom: px;
-}
-
-section div.back {
-  background-color: hsla(0deg, 0%, 100%, 75%);
-  width: 700px;
-  height: 333px;
-  position: absolute;
-  top: 11px;
-}
-
-div.night_mark img {
-  border-radius: 15px;
-  width: 305px;
-  height: 272px;
-  position: absolute;
-  top: 30px !important;
-  left: 20px;
-  object-fit: cover;
-}
-
-div.night_mark p.title {
-  font-size: 24px;
-  position: absolute;
-  left: 345px;
-  top: 60px;
-}
-
-div.night_mark p.content {
-  font-size: 18px;
-  width: 325px;
-  height: 170px;
-  position: absolute;
-  right: 20px;
-  top: 105px;
-}
-
 /* 自訂行程 */
-
 p.try {
   font-size: 30px;
   margin-top: 100px;
@@ -300,7 +112,7 @@ article {
   max-width: 1200px;
   display: block;
 }
-article img{
+article img {
   display: block;
   margin: 0 auto;
 }
@@ -585,6 +397,12 @@ article.line p.walk {
   left: 40px;
   top: 25px;
 }
+div.time {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: none;
+}
 /* --------------------RWD ------------------*/
 @media screen and (max-width: 575.98px) {
   div.banner {
@@ -673,6 +491,18 @@ article.line p.walk {
     height: inherit;
     margin-bottom: 80px;
   }
+  section div.station:last-child {
+    box-shadow: 1px 1px 1px lightgrey;
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    margin-bottom: 80px;
+  }
   div.station p.title {
     width: fit-content;
     padding: 30px 0px 20px 0px;
@@ -708,6 +538,7 @@ article.line p.walk {
     width: fit-content;
     margin: 0 auto;
     margin-bottom: 80px;
+    display: block;
   }
   div.text p:first-child {
     margin: 0 auto;
@@ -731,7 +562,7 @@ article.line p.walk {
   }
   p.try {
     font-size: 24px;
-    margin-top:  0px;
+    margin-top: 0px;
     text-align: center;
     margin-bottom: 80 px;
   }
@@ -739,9 +570,293 @@ article.line p.walk {
     position: relative;
     width: 100%;
     display: inline-block;
-}
-  article img{
+  }
+  article img {
     width: 100%;
     margin-bottom: 50px;
+  }
+  div.line {
+    position: sticky;
+    top: 150px;
+    display: none;
+  }
+  div.line  > img {
+    display: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+}
+@media (min-width:576px) and (max-width: 767.98px){
+  article.line {
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 5 px;
+    box-shadow: 1px 1px 1px lightgrey;
+    width: 300 px;
+    height: 680 px;
+    display: inline-block;
+    position: sticky;
+    top: 150 px;
+    bottom: 0 px;
+    display: none;
+  }
+  div.fit {
+    width: 100%;
+    display: inline-block;
+    height: fit-content;
+  }
+  main section {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0 !important;
+  }
+  section div.background {
+    background-color: hsla(0deg, 0%, 100%, 75%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    position: static;
+  }
+  section div.station {
+    box-shadow: 1px 1px 1px lightgrey;
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    margin-bottom: 80px;
+  }
+  section div.station:last-child {
+    box-shadow: 1px 1px 1px lightgrey;
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    margin-bottom: 80px;
+  }
+  div.station p.title {
+    width: fit-content;
+    padding: 30px 0px 20px 0px;
+    margin: 0 auto;
+    font-size: 24px;
+    position: static;
+    order: 1;
+  }
+  div.station p.content {
+    font-size: 18px;
+    width: 100%;
+    padding: 30px 10px 30px 10px;
+    height: fit-content;
+    position: static;
+    margin: 0 auto;
+  }
+  div.station img {
+    margin: 0 auto;
+    width: 90%;
+    height: 66.666666666666vw;
+    position: static;
+    object-fit: cover;
+  }
+  p.sol {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    color: hsla(0deg, 2%, 33%, 100);
+  }
+  div.time {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: block;
+  }
+  div.text p:first-child {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 24px;
+  }
+  div.text p:nth-child(2) {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  div.text > img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    opacity: 0.7;
+  }
+  p.try {
+    font-size: 24px;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 80 px;
+  }
+  article {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+  article img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  div.line {
+    position: sticky;
+    top: 150px;
+    display: none;
+  }
+  div.line  > img {
+    display: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  div.bread a:first-child {
+    padding-left: 0px !important;
+  }
+  div.banner {
+    margin: 0 auto;
+    background-image: url("./images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  div.bread {
+    width: 100%;
+    min-width: 100% !important;
+    margin: 0 auto;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    height: 30px;
+  }
+  div.center {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  div.bread a {
+    line-height: 30px;
+  }
+  div.bread a:first-child {
+    padding-left: 0px;
+    text-align: center;
+  }
+  main.main {
+    width: 100%;
+    padding: 100px 20px 0px 20px;
+  }
+  article.line {
+    background-color: hsla(160deg, 52%, 40%, 0.19);
+    border-radius: 5 px;
+    box-shadow: 1px 1px 1px lightgrey;
+    width: 300 px;
+    height: 680 px;
+    display: inline-block;
+    position: sticky;
+    top: 150 px;
+    bottom: 0 px;
+  }
+}
+
+@media (min-width:576px) and (max-width: 1045px) {
+  div.bread {
+    width: 100%;
+    min-width: 100% !important;
+    margin: 0 auto;
+    background-color: hsla(160deg, 52%, 40%, 15%);
+    height: 30px;
+  }
+  div.center {
+    width: fit-content ;
+    margin: 0 auto;
+  }
+  div.bread a {
+    line-height: 30px;
+  }
+  div.bread a:first-child {
+    padding-left: 0px !important;
+    text-align: center;
+  }
+  article.line {
+    display: none;
+  }
+  div.line {
+    display: inline-block;
+    position: sticky;
+    top: 200px;
+    transform: translateX(-20%);
+  }
+  div.line img {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main section {
+    width: 690 px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+  }
+  div.fit {
+    width: fit-content;
+    max-width: 1200 px;
+    display: block;
+    margin: 0 auto;
+  }
+  article img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+div.time {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: block;
+}
+div.text p:first-child {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 24px;
+}
+div.text p:nth-child(2) {
+  display: block;
+  width: fit-content;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+div.text > img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  opacity: 0.7;
+}
+}
+@media (min-width:576px) and (max-width: 781.98px){
+  div.line {
+    display: none;
+    position: sticky;
+    top: 150px;
   }
 }
