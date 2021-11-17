@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>達人分享</title>
     <link href="./master.css" rel="stylesheet">
-
     <link href="../navbar.css" rel="stylesheet">
     <link href="../footer.css" rel="stylesheet">
     <link rel="icon" href="./icons/icon.ico" type="image/x-icon"/>
@@ -14,6 +13,7 @@
   </head>
   <body>
       <nav class="navbar">
+        <div class="light"></div>
         <aside class="aside">
           <img class="x" src="../x.svg">
           <div class="background"></div>
@@ -85,6 +85,7 @@
         <div class="center">
           <a href="../index/index.html">首頁</a > /<span>達人分享</span>
         </div>
+      </div>
       <main class="main">
         <article class="frist">
           <img src="./images/block_1.png" data-aos="zoom-in">
@@ -103,11 +104,11 @@
         </article>
         <article class="three">
           <div class="middle">
-            <img class="block_3_1" src="./images/block_3_1.png">
-            <img class="block_3_2" src="./images/block_3_2.png">
+            <img class="block_3_1" data-aos="fade-right" src="./images/block_3_1.png">
+            <img class="block_3_2" data-aos="fade-left" src="./images/block_3_2.png">
           </div>
           <p>二樓為展覽區，不定期會展出基隆相關的文藝展覽，是市中心這一帶少有的結合咖啡與文藝的店家在二樓晃晃，仍保有老屋的味道，窗外車水馬龍的吵雜聲似乎都被凍結了。</p>
-          <img class="back" src="./icons/Ellipse 26.svg" data-aos="fade-right">
+          <img class="back" src="./icons/Ellipse 26.svg" >
         </article>
         <article class="four">
           <div class="middle">
@@ -118,7 +119,7 @@
           <div class="middle_1">
             <img id="img" src="./images/block_4_3.png">
             <p class="two">附上的小甜點，鬆軟微甜，搭配咖啡很棒，這樣子品味咖啡也算是給自己驚喜，來店內的你不仿也試試看。</p>
-            <img class="back" src="./icons/Ellipse 25.svg" data-aos="fade-left" >
+            <img class="back" src="./icons/Ellipse 25.svg"  >
           </div>
         </article>
       </main>
@@ -149,20 +150,22 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script>
-        $(function(){
-        // 點擊
-        $("div.img").on("click", function(){
-          // -open 的樣式切換
-        $("aside").toggleClass("-open");
-          });
-        });
-        $(function(){
-        // 點擊
-        $("img.x").on("click", function(){
+          $(function(){
+
+          // 點擊
+          $("div.img").on("click", function(){
             // -open 的樣式切換
-        $("aside").removeClass("-open");
-            });
-        });
+          $("aside").toggleClass("-open"),$('div.light').toggleClass("-on");
+            })
+          });
+          $(function(){
+
+          // 點擊
+          $("img.x").on("click", function(){
+              // -open 的樣式切換
+          $("aside").removeClass("-open"),$('div.light').removeClass("-on");
+              });
+          });
       </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>

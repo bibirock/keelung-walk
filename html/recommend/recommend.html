@@ -11,6 +11,7 @@
   <link href="../navbar.css" rel="stylesheet">
   <link href="../footer.css" rel="stylesheet">
   <link rel="icon" href="./images/icon/icon.ico" type="image/x-icon" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
@@ -82,12 +83,15 @@
         </div> -->
   </nav>
   <div class="banner">
-    <p>魅力基隆，這樣玩</p>
+    <p>推薦行程</p>
   </div>
   <div class="bread">
-    <a href="../index/index.html">首頁</a > / <a href="#"a>主題景點</a> / <span>幽遊山徑</span>
+    <div class="center">
+      <a href="../index/index.html">首頁</a > / <a href="#"a>行程安排</a> / <span>推薦行程</span>
+    </div>
   </div>
   <main class="main">
+    <p class="sol" data-aos="fade-up">魅力基隆，這樣玩</p>
     <div class="fit">
       <article class="line">
         <p class="title">景點路線</p>
@@ -140,8 +144,18 @@
             <img src="./images/station.png">
           </div>
         </div>
+        <div class="time" 
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <div class="text">
+            <p>八斗子車站</p>
+            <p>走路2分鐘</p>
+            <img src="./images/icon/vector.svg">
+          </div>
+        </div>
         <!-- 自行車 -->
-        <div class="bike">
+        <div class="station">
           <div class="background">
             <p class="title">
               深澳鐵道自行車
@@ -152,8 +166,17 @@
             <img src="./images/bike.jpg">
           </div>
         </div>
+        <div class="time" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <div class="text">
+            <p>深澳鐵道自行車</p>
+            <p>走路5分鐘</p>
+            <img src="./images/icon/vector.svg">
+          </div>
+        </div>
         <!-- 石頭火鍋 -->
-        <div class="food">
+        <div class="station">
           <div class="background">
             <p class="title">
               望海巷石頭火鍋
@@ -164,8 +187,17 @@
             <img src="./images/food.jpg">
           </div>
         </div>
+        <div class="time" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <div class="text">
+            <p>望海巷石頭火鍋</p>
+            <p>走路11分鐘</p>
+            <img src="./images/icon/vector.svg">
+          </div>
+        </div>
         <!-- 海科館 -->
-        <div class="mu">
+        <div class="station">
           <div class="background">
             <p class="title">
               國立海洋科技博物館
@@ -176,8 +208,17 @@
             <img src="./images/mu.jpg">
           </div>
         </div>
+        <div class="time" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <div class="text">
+            <p>國立海洋科技博物館</p>
+            <p>走路11分鐘</p>
+            <img src="./images/icon/vector.svg">
+          </div>
+        </div>
         <!-- 潮境公園 -->
-        <div class="park">
+        <div class="station">
           <div class="background">
             <p class="title">
               潮境公園
@@ -188,9 +229,18 @@
             <img src="./images/park.jpg">
           </div>
         </div>
+        <div class="time" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+          <div class="text">
+            <p>潮境公園</p>
+            <p>搭公車15分鐘</p>
+            <img src="./images/icon/vector.svg">
+          </div>
+        </div>
         <!-- 廟口夜市 -->
-        <div class="night_mark">
-          <div class="back">
+        <div class="station">
+          <div class="background">
             <p class="title">
               廟口夜市
             </p>
@@ -204,12 +254,7 @@
     </div>
     <p class="try">試試自訂您的行程吧!</p>
     <article>
-      <img class="try_1" src="./images/try1.png">
-      <img class="try_2" src="./images/try2.png">
-      <img class="try_3" src="./images/try3.png">
-      <img class="vector_1" src="./images/Vector 3.png">
-      <img class="vector_2" src="./images/Vector 3.png">
-      <img class="grad" src="./images/gradual.png">
+     <img src="./images/try_group.svg">
     </article>
     <a class="button" href="../custom/custom.html">立即前往</a>
   </main>
@@ -223,8 +268,6 @@
     </div>
     <div class="slogan">
       <p class="h1">基隆漫步 Keelung Walk</p>
-      <a class="fbicon" href="#"><img src="../../use_photo/footer/fb.png"></a>
-      <a class="igicon" href="#"><img src="../../use_photo/footer/ig.png"></a>
       <p class="local">連結在地生活、人物、文化、飲食、旅遊
         深入更多的精彩。</p>
       <p class="copy">Copyright 2021 基隆漫步 Keelung Walk All rights reserved.</p>
@@ -256,6 +299,10 @@
         });
       });
   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </body>
 
 </html>

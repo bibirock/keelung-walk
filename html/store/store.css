@@ -210,6 +210,10 @@ button {
     flex-shrink: 0;
     overflow: hidden;
   }
+  ul.slides {
+    overflow: hidden;
+    border-radius: 15px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -317,6 +321,10 @@ button {
     margin: 0 auto;
     height: 66.666666666666666666%;
     flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  ul.slides {
     overflow: hidden;
     border-radius: 15px;
   }
