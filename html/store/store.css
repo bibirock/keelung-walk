@@ -397,7 +397,7 @@ button {
   div.text {
     padding: 20px 0px 0px 0px;
     height: 100%;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -438,18 +438,20 @@ button {
   .p5_play {
     /* width: 480px; */
     margin: 0 auto;
-    height: 66.666666666666666666%;
+    height: 50.666666666666666666vw;
     overflow: hidden;
     padding-left: 20px;
-   
+    width: 55%;
   }
   ul.slides {
-    width: 480px !important;
-    height: 380px !important;
+    /* width: 480px !important;
+    height: 380px !important; */
     object-fit:fill !important;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 15px;
+    width: 100%!important;
+    height: 40.666666666666666666vw !important;
   }
 }
 
