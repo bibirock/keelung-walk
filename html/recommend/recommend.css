@@ -98,7 +98,12 @@ div.station p.content {
   right: 20px;
   top: 105px;
 }
-
+html{
+  scroll-behavior: smooth;
+}
+div.station{
+  height: 200vh;
+}
 /* 自訂行程 */
 p.try {
   font-size: 30px;
@@ -163,11 +168,12 @@ article.line > div.background {
 
 /* 八斗子車站 */
 article.line div.station {
-  width: 250px;
+  width: 150px;
   height: 80px;
   position: absolute;
   left: 30px;
   top: 35px;
+  cursor: pointer;
 }
 
 article.line div.station > img.point_1 {
@@ -202,11 +208,12 @@ article.line p.walk {
 
 /* 自行車 */
 article.line div.bike {
-  width: 250px;
+  width: 180px;
   height: 80px;
   position: absolute;
   left: 30px;
   top: 130px;
+  cursor: pointer;
 }
 
 article.line div.bike > img.point_1 {
@@ -247,6 +254,7 @@ article.line div.food {
   position: absolute;
   left: 30px;
   top: 230px;
+  cursor: pointer;
 }
 
 article.line div.food > img.point_1 {
@@ -282,11 +290,12 @@ article.line p.walk_1 {
 /* 海洋博物館 */
 
 article.line div.mu {
-  width: 250px;
+  width: 220px;
   height: 80px;
   position: absolute;
   left: 30px;
   top: 360px;
+  cursor: pointer;
 }
 
 article.line div.mu > img.point_1 {
@@ -322,11 +331,12 @@ article.line p.walk {
 /* 朝覲公園 */
 
 article.line div.park {
-  width: 250px;
+  width: 150px;
   height: 80px;
   position: absolute;
   left: 30px;
   top: 460px;
+  cursor: pointer;
 }
 
 article.line div.park > img.point_1 {
@@ -361,11 +371,12 @@ article.line p.walk {
 
 /* 廟口夜市 */
 article.line div.night {
-  width: 250px;
-  height: 80px;
+  width: 200px;
+  height: 50px;
   position: absolute;
   left: 30px;
   top: 565px;
+  cursor: pointer;
 }
 
 article.line div.night > img.point_2 {
