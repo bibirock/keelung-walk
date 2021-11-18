@@ -104,6 +104,11 @@ button {
   flex-shrink: 0;
   overflow: hidden;
 }
+ul.slides {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
 /* -----------------------RWD -----------------------*/
 @media (max-width: 575.98px) {
   div.banner {
