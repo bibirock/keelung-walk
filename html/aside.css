@@ -224,6 +224,31 @@ ul.travel :hover span::before{
 
 }
 @media (max-width: 575.98px) {
+  div.light{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    background-color: black;
+    opacity: 0.5;
+    transition: .9s;
+    z-index: 8;
+    display: none;
+  } 
+  div.-on{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: flex;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    transition: 1s;
+    z-index: 8;
+    display: none;
+  }
   img.x{
     width: 30px;
     position: absolute;
