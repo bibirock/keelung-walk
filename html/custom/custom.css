@@ -323,6 +323,7 @@ div.suggest > button {
   div.grid_item p {
     font-size: 14px;
     color: white;
+    backdrop-filter: blur(10px);;
     -webkit-backdrop-filter: blur(10px);
     padding-top: 2px;
     height: 25px;
