@@ -119,7 +119,6 @@ article.goto p::after {
   background-repeat: no-repeat;
   background-size: 35%;
   width: 70px;
-  content: "重選";
   position: absolute;
   font-size: 18px;
   bottom: -30px;
