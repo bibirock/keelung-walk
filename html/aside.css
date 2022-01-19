@@ -73,7 +73,7 @@ aside > ul{
   top: 0;
   z-index: 3;
   overflow: hidden;
-  font-size: 30px;
+  font-size: 26px;
   padding-left: 300px;
   padding-top: 120px;
   line-height: 100px;
@@ -99,7 +99,7 @@ div{
 li.a1:hover{
   transform: translateX(-5px); 
   transition: all .5s;
-  font-size: 32px;
+  font-size: 30px;
   cursor: pointer;
   
 

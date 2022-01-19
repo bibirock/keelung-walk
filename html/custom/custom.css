@@ -104,27 +104,33 @@ article.goto img.vector {
 
 article.goto p {
   border-radius: 5px;
-  width: 245px;
-  height: 200px;
-  padding-top: 85px;
+  width: 243px;
+  height: 172px;
+  /* padding-top: 85px; */
+  line-height: 172px;
   text-align: center;
   background-color: lightgray;
   margin-bottom: 60px;
   position: relative;
 }
-article.goto p::after {
-  cursor: pointer;
+
+article.goto p button{
   background-color: hsla(160deg, 52%, 40%, 0.19);
   background-image: url("./icon/reset.png");
   background-repeat: no-repeat;
   background-size: 35%;
+  line-height: 30px;
+  height: 30px;
   width: 70px;
   position: absolute;
   font-size: 18px;
-  bottom: -30px;
+  bottom: -35px;
   right: 0;
-  padding-right: 10px;
-  text-align: right;
+  padding-left: 20px;
+  line-height: 30px;
+  /* text-align: right; */
+  cursor: pointer;
+  border-radius: 5px;
 }
 article.goto img.plus {
   /* border: 1px solid blue; */
@@ -132,6 +138,13 @@ article.goto img.plus {
 }
 
 /* ------------------------------建議路程時間------------------ */
+
+
+
+/* 地圖部分 */
+
+
+
 article.next {
   border-top: 1px solid hsla(160deg, 52%, 40%, 0.19);
   border-bottom: 1px solid hsla(160deg, 52%, 40%, 0.19);
@@ -156,12 +169,24 @@ article.next p.time {
   padding: 25px 0 25px 170px;
 }
 
-article.next div.map {
+/* article.next div.map {
   margin-left: 20px;
   display: inline-block;
   vertical-align: top;
+} */
+div#map{
+  display: inline-block;
+  width:475px;
+  height:390px;
+  margin-left: 20px;
+  vertical-align: top;
+  border-radius: 5px;
 }
-
+.leaflet-popup-content {
+  margin: 13px 19px;
+  line-height: 1.4;
+  font-size: 14px;
+}
 div.suggest {
   display: inline-block;
   font-size: 18px;
@@ -347,3 +372,4 @@ div.suggest > button {
     width: 960px;
   }
 }
+
