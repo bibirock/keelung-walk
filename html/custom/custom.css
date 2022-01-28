@@ -181,6 +181,17 @@ div#map{
   margin-left: 20px;
   vertical-align: top;
   border-radius: 5px;
+  
+}
+@media screen and (max-width: 575.98px) {
+  div#map{
+    display: block;
+    width:90%;
+    height:390px;
+    margin-left: 0px;
+    margin:0 auto;
+    border-radius: 5px;
+  }
 }
 .leaflet-popup-content {
   margin: 13px 19px;

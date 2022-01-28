@@ -333,16 +333,18 @@ div.control > img#right {
   cursor: pointer;
 }
 
-div.images {
+/* div.images {
   width: 100%;
   max-width: 1200px;
   display: inline-flex;
   justify-content: space-between;
   position: absolute;
   top: 130px;
-}
+  font-size: 0;
+} */
+
 div.images img.down {
-  transform: translateY(70px);
+  /* transform: translateY(70px); */
 }
 
 div.banner_3 {
