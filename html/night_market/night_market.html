@@ -243,6 +243,12 @@
         $("aside").removeClass("-open"), $("div.light").delay(1000).removeClass("-on");
         });
       });
+      $(window).on("click",(e) =>{
+          const light = document.querySelector(".light");
+          if(e.target == light){
+          $("aside").removeClass("-open"), $("div.light").removeClass("-on");
+          }
+        });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

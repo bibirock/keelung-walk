@@ -278,7 +278,12 @@
           $("aside").removeClass("-open"), $("div.light").removeClass("-on");
         });
       });
-
+      $(window).on("click",(e) =>{
+        const light = document.querySelector(".light");
+        if(e.target == light){
+          $("aside").removeClass("-open"), $("div.light").removeClass("-on");
+        }
+      })
       const map = L.map("map");
       // 設定圖資來源
       var osmUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";

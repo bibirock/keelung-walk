@@ -410,20 +410,28 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      $(function () {
-        // 點擊
-        $("img.menu").on("click", function () {
-          // -open 的樣式切換
-          $("aside").toggleClass("-open"), $("div.light").toggleClass("-on");
-        });
-      });
-      $(function () {
-        // 點擊
-        $("img.x").on("click", function () {
-          // -open 的樣式切換
-          $("aside").removeClass("-open"), $("div.light").removeClass("-on");
-        });
-      });
+      import {doQuery} from '../index/index.js'
+      doQuery();
+      // $(function () {
+      //   // 點擊
+      //   $("img.menu").on("click", function () {
+      //     // -open 的樣式切換
+      //     $("aside").toggleClass("-open"), $("div.light").toggleClass("-on");
+      //   });
+      // });
+      // $(function () {
+      //   // 點擊
+      //   $("img.x").on("click", function () {
+      //     // -open 的樣式切換
+      //     $("aside").removeClass("-open"), $("div.light").removeClass("-on");
+      //   });
+      // });
+      // $(window).on("click",(e) =>{
+      //     const light = document.querySelector(".light");
+      //     if(e.target == light){
+      //     $("aside").removeClass("-open"), $("div.light").removeClass("-on");
+      //     }
+      // });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
